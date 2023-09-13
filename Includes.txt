@@ -1,0 +1,4 @@
+cps drop
+monster role
+console
+Exit for server maintenance

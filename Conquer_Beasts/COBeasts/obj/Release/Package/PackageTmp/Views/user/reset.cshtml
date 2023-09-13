@@ -1,0 +1,55 @@
+﻿@model PhoenixConquer.Models.RestorePasswordModel
+@{
+    ViewBag.Title = "Reset";
+    Layout = "~/Views/page.cshtml";
+}
+
+<section class="bg-image bg-image-sm" style="background-image: url('@Url.Content("~/img/bg/bg-login.jpg")');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-4 mx-auto">
+                <div class="card m-b-0">
+                    <div class="card-header">
+                        <h4 class="card-title"><i class="fa fa-sign-in"></i> Restore the password</h4>
+                    </div>
+                    <div class="card-block">
+                        @{
+                            string user = "";
+                            string tok = "";
+                            if (Request.QueryString["user"] != null && Request.QueryString["token"] != null)
+                            {
+                                tok = Request.QueryString["token"].ToString();
+                                user = Request.QueryString["user"].ToString();
+                            }
+                        }
+                        @using (Html.BeginForm("reset", "user", new { user = user, token = tok },
+            FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            <span class="text-danger">@ViewBag.Message</span>
+                            <br />
+                            <i class="fa fa-check"></i>
+                            <div class="form-group input-icon-left">
+                                <i class="fa fa-lock"></i>
+                                <input type="password" class="form-control" name="Password" placeholder="New password" required="">
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group input-icon-left">
+                                <i class="fa fa-check"></i>
+                                <input type="password" class="form-control" name="ConfirmPassword" placeholder="Confirm new password" required="">
+                                @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-actions">
+                                <div class="g-recaptcha" data-sitekey="@System.Web.Configuration.WebConfigurationManager.AppSettings["captchaSiteKey"]"></div>
+                            </div>
+                            <br />
+                            <button type="submit" class="btn btn-primary btn-block">Set new password</button>
+
+                            <br />
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

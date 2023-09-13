@@ -1,0 +1,138 @@
+﻿@{
+    ViewBag.Title = "Rankings";
+    Layout = "~/Views/page.cshtml";
+}
+
+
+<section class="bg-primary">
+    <div class="container">
+        <h3 class="text-white font-weight-300 m-b-0">Game Rankings</h3>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h5>Top Players</h5>
+        <p>The strongest players on the server.</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Potency</th>
+                    <th>Level</th>
+                    <th>VIPLevel</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+
+                    int rank = 1;
+                    foreach (PhoenixConquer.Controllers.pageController.Toper pl in PhoenixConquer.Controllers.pageController.Topers(PhoenixConquer.Controllers.pageController.TopsType.Potency))
+                    {
+                        <tr>
+                            <th scope="row">@(rank++)</th>
+                            <td>@pl.Name</td>
+                            <td>@pl.Param</td>
+                            <td>@pl.Level</td>
+                            <td>@pl.VIPLevel</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+        <h5 class="m-t-80">Top Gold</h5>
+        <p>The richest players on the server.</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Money</th>
+                    <th>Level</th>
+                    <th>VIPLevel</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+
+                    rank = 1;
+                    foreach (PhoenixConquer.Controllers.pageController.Toper pl in PhoenixConquer.Controllers.pageController.Topers(PhoenixConquer.Controllers.pageController.TopsType.Money))
+                    {
+                        <tr>
+                            <th scope="row">@(rank++)</th>
+                            <td>@pl.Name</td>
+                            <td>@pl.Param</td>
+                            <td>@pl.Level</td>
+                            <td>@pl.VIPLevel</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+        <h5 class="m-t-80">Top Virtue</h5>
+        <p>The players with the most virtue points.</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>VPs</th>
+                    <th>Level</th>
+                    <th>VIPLevel</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+
+                    rank = 1;
+                    foreach (PhoenixConquer.Controllers.pageController.Toper pl in PhoenixConquer.Controllers.pageController.Topers(PhoenixConquer.Controllers.pageController.TopsType.PK))
+                    {
+                        <tr>
+                            <th scope="row">@(rank++)</th>
+                            <td>@pl.Name</td>
+                            <td>@pl.Param</td>
+                            <td>@pl.Level</td>
+                            <td>@pl.VIPLevel</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+        <h5 class="m-t-80">Top PK</h5>
+        <p>This most wanted players.</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>PKPoints</th>
+                    <th>Level</th>
+                    <th>VIPLevel</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+
+                    rank = 1;
+                    foreach (PhoenixConquer.Controllers.pageController.Toper pl in PhoenixConquer.Controllers.pageController.Topers(PhoenixConquer.Controllers.pageController.TopsType.PK))
+                    {
+                        <tr>
+                            <th scope="row">@(rank++)</th>
+                            <td>@pl.Name</td>
+                            <td>@pl.Param</td>
+                            <td>@pl.Level</td>
+                            <td>@pl.VIPLevel</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+
+    </div>
+</section>
+

@@ -1,0 +1,61 @@
+﻿@model PhoenixConquer.Models.ContactForm
+@{
+    ViewBag.Title = "contact_form";
+    Layout = "~/Views/page.cshtml";
+}
+
+
+<section class="p-b-0">
+    <div class="container">
+        <div class="heading">
+            <i class="fa fa-envelope-open-o"></i>
+            <h2>Get in touch with us</h2>
+            <p>We`ll respond you to you on your email.</p>
+        </div>
+    </div>
+</section>
+
+<section class="p-t-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+
+                @using (Html.BeginForm("contact_form", "page", new { ReturnUrl = ViewBag.ReturnUrl },
+            FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    <span class="text-danger">@ViewBag.Message</span>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" name="Username" placeholder="Enter your username">
+                        @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Your in-game name.</label>
+                        <input type="text" class="form-control" name="Name" placeholder="Enter your name">
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Email</label>
+                        <input type="text" class="form-control" name="Email" placeholder="We`ll respond to you on this Email">
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" name="Message" maxlength="255" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-rounded btn-effect btn-shadow float-right">Submit</button>
+                    <div class="form-actions">
+                        <div class="g-recaptcha" data-sitekey="@System.Web.Configuration.WebConfigurationManager.AppSettings["captchaSiteKey"]"></div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-y-0">
+    <div id="map" style="height: 360px;"></div>
+</section>
+
+

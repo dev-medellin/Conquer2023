@@ -1,0 +1,72 @@
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\obj\Debug\COBeasts.csprojResolveAssemblyReference.cache
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\obj\Debug\PhoenixConquer.dll
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\obj\Debug\PhoenixConquer.pdb
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\PhoenixConquer.dll.config
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\PhoenixConquer.dll
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\PhoenixConquer.pdb
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\MySql.Data.dll
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\Newtonsoft.Json.dll
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Helpers.dll
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Mvc.dll
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Razor.dll
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Webpages.Deployment.dll
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Webpages.dll
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Webpages.Razor.dll
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\Newtonsoft.Json.xml
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Razor.xml
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Webpages.xml
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Webpages.Deployment.xml
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Webpages.Razor.xml
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Helpers.xml
+D:\CO Stuff\Conquer Websites\Conquer Beasts\COBeasts\bin\System.Web.Mvc.xml
+C:\inetpub\Conquer_Beasts\COBeasts\bin\PhoenixConquer.dll.config
+C:\inetpub\Conquer_Beasts\COBeasts\bin\PhoenixConquer.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\PhoenixConquer.pdb
+C:\inetpub\Conquer_Beasts\COBeasts\bin\Microsoft.Web.Infrastructure.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\Newtonsoft.Json.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Helpers.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Mvc.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Razor.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.Deployment.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.Razor.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\Newtonsoft.Json.xml
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Razor.xml
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.xml
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.Deployment.xml
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.Razor.xml
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Helpers.xml
+C:\inetpub\Conquer_Beasts\COBeasts\bin\System.Web.Mvc.xml
+C:\inetpub\Conquer_Beasts\COBeasts\obj\Debug\COBeasts.csproj.CoreCompileInputs.cache
+C:\inetpub\Conquer_Beasts\COBeasts\obj\Debug\COBeasts.csproj.CopyComplete
+C:\inetpub\Conquer_Beasts\COBeasts\obj\Debug\PhoenixConquer.dll
+C:\inetpub\Conquer_Beasts\COBeasts\obj\Debug\PhoenixConquer.pdb
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\PhoenixConquer.dll.config
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\PhoenixConquer.dll
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\PhoenixConquer.pdb
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\Newtonsoft.Json.dll
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Helpers.dll
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Mvc.dll
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Razor.dll
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.dll
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.Razor.dll
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\Newtonsoft.Json.xml
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Razor.xml
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.xml
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Webpages.Razor.xml
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Helpers.xml
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\bin\System.Web.Mvc.xml
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\obj\Debug\COBeasts.csprojResolveAssemblyReference.cache
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\obj\Debug\PhoenixConquer.dll
+C:\Users\Duke\Desktop\Conquer_Beasts\COBeasts\obj\Debug\PhoenixConquer.pdb
+C:\inetpub\Conquer_Beasts\COBeasts\obj\Debug\COBeasts.csprojAssemblyReference.cache
+C:\inetpub\Conquer_Beasts\COBeasts\bin\BouncyCastle.Crypto.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\Google.Protobuf.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\MySql.Data.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\Renci.SshNet.dll
+C:\inetpub\Conquer_Beasts\COBeasts\bin\Google.Protobuf.xml
+C:\inetpub\Conquer_Beasts\COBeasts\bin\MySql.Data.xml
+C:\inetpub\Conquer_Beasts\COBeasts\bin\Renci.SshNet.xml

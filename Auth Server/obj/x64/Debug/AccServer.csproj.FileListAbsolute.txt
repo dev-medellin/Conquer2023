@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\Assassin\AccServer\bin\Debug\AccServer.exe.config
+C:\Users\Administrator\Desktop\Assassin\AccServer\bin\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\Assassin\AccServer\obj\x64\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\Assassin\AccServer\obj\x64\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\Assassin\AccServer\bin\Debug\AccServer.pdb

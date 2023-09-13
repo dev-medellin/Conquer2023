@@ -1,0 +1,160 @@
+D:\last work\Work\wod\AccServer\bin\Debug\AccServer.exe.config
+D:\last work\Work\wod\AccServer\bin\Debug\AccServer.exe
+D:\last work\Work\wod\AccServer\bin\Debug\AccServer.pdb
+D:\last work\Work\wod\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+D:\last work\Work\wod\AccServer\obj\Debug\AccServer.exe
+D:\last work\Work\wod\AccServer\obj\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\New folder\lords x\AccServer\bin\Debug\AccServer.exe.config
+C:\Users\Administrator\Desktop\New folder\lords x\AccServer\bin\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\New folder\lords x\AccServer\bin\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\New folder\lords x\AccServer\obj\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\New folder\lords x\AccServer\obj\Debug\AccServer.pdb
+C:\Users\Abdallah Khaled\Desktop\AccServer\bin\Debug\AccServer.exe.config
+C:\Users\Abdallah Khaled\Desktop\AccServer\bin\Debug\AccServer.exe
+C:\Users\Abdallah Khaled\Desktop\AccServer\obj\Debug\AccServer.exe
+C:\Users\Abdallah Khaled\Desktop\AccServer\obj\Debug\AccServer.pdb
+C:\Users\Abdallah Khaled\Desktop\AccServer\bin\Debug\AccServer.pdb
+C:\Users\Abdallah Khaled\Desktop\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+C:\Users\Abdallah\Desktop\AccServer\bin\Debug\AccServer.exe.config
+C:\Users\Abdallah\Desktop\AccServer\bin\Debug\AccServer.exe
+C:\Users\Abdallah\Desktop\AccServer\bin\Debug\AccServer.pdb
+C:\Users\Abdallah\Desktop\AccServer\obj\Debug\AccServer.exe
+C:\Users\Abdallah\Desktop\AccServer\obj\Debug\AccServer.pdb
+C:\Users\Abdallah\Desktop\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\LordsConquer\AccServer\bin\Debug\AccServer.exe.config
+C:\Users\Administrator\Downloads\LordsConquer\AccServer\bin\Debug\AccServer.exe
+C:\Users\Administrator\Downloads\LordsConquer\AccServer\bin\Debug\AccServer.pdb
+C:\Users\Administrator\Downloads\LordsConquer\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\LordsConquer\AccServer\obj\Debug\AccServer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\LordsConquer\AccServer\obj\Debug\AccServer.exe
+C:\Users\Administrator\Downloads\LordsConquer\AccServer\obj\Debug\AccServer.pdb
+C:\Users\Administrator\Downloads\7Conquer\AccServer\bin\Debug\AccServer.exe.config
+C:\Users\Administrator\Downloads\7Conquer\AccServer\bin\Debug\AccServer.exe
+C:\Users\Administrator\Downloads\7Conquer\AccServer\bin\Debug\AccServer.pdb
+C:\Users\Administrator\Downloads\7Conquer\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\7Conquer\AccServer\obj\Debug\AccServer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\7Conquer\AccServer\obj\Debug\AccServer.exe
+C:\Users\Administrator\Downloads\7Conquer\AccServer\obj\Debug\AccServer.pdb
+E:\7Conquer_Backup\AccServer\bin\Debug\AccServer.exe.config
+E:\7Conquer_Backup\AccServer\bin\Debug\AccServer.exe
+E:\7Conquer_Backup\AccServer\bin\Debug\AccServer.pdb
+E:\7Conquer_Backup\AccServer\obj\Debug\AccServer.exe
+E:\7Conquer_Backup\AccServer\obj\Debug\AccServer.pdb
+E:\7Conquer_Backup\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+E:\VsConQuer_Backup\AccServer\bin\Debug\AccServer.exe.config
+E:\VsConQuer_Backup\AccServer\bin\Debug\AccServer.exe
+E:\VsConQuer_Backup\AccServer\bin\Debug\AccServer.pdb
+E:\VsConQuer_Backup\AccServer\obj\Debug\AccServer.exe
+E:\VsConQuer_Backup\AccServer\obj\Debug\AccServer.pdb
+E:\VsConQuer_Backup\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ForSecret\VsConQuer_Backup\AccServer\bin\Debug\AccServer.exe.config
+C:\Users\Administrator\Desktop\ForSecret\VsConQuer_Backup\AccServer\bin\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\ForSecret\VsConQuer_Backup\AccServer\bin\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\ForSecret\VsConQuer_Backup\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ForSecret\VsConQuer_Backup\AccServer\obj\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\ForSecret\VsConQuer_Backup\AccServer\obj\Debug\AccServer.pdb
+E:\Conq Collection\ForSecret\VsConQuer_Backup\AccServer\bin\Debug\AccServer.exe.config
+E:\Conq Collection\ForSecret\VsConQuer_Backup\AccServer\obj\Debug\AccServer.exe
+E:\Conq Collection\ForSecret\VsConQuer_Backup\AccServer\obj\Debug\AccServer.pdb
+E:\Conq Collection\ForSecret\VsConQuer_Backup\AccServer\bin\Debug\AccServer.exe
+E:\Conq Collection\ForSecret\VsConQuer_Backup\AccServer\bin\Debug\AccServer.pdb
+E:\Conq Collection\ForSecret\VsConQuer_Backup\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+E:\DarkTao [Classic]\VsConQuer_Backup\AccServer\bin\Debug\AccServer.exe.config
+E:\DarkTao [Classic]\VsConQuer_Backup\AccServer\obj\Debug\AccServer.exe
+E:\DarkTao [Classic]\VsConQuer_Backup\AccServer\obj\Debug\AccServer.pdb
+E:\DarkTao [Classic]\VsConQuer_Backup\AccServer\bin\Debug\AccServer.exe
+E:\DarkTao [Classic]\VsConQuer_Backup\AccServer\bin\Debug\AccServer.pdb
+E:\DarkTao [Classic]\VsConQuer_Backup\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+E:\DarkTao [Classic]\DarkTao V5661\AccServer\bin\Debug\AccServer.exe.config
+E:\DarkTao [Classic]\DarkTao V5661\AccServer\obj\Debug\AccServer.exe
+E:\DarkTao [Classic]\DarkTao V5661\AccServer\obj\Debug\AccServer.pdb
+E:\DarkTao [Classic]\DarkTao V5661\AccServer\bin\Debug\AccServer.exe
+E:\DarkTao [Classic]\DarkTao V5661\AccServer\bin\Debug\AccServer.pdb
+E:\DarkTao [Classic]\DarkTao V5695\AccServer\bin\Debug\AccServer.exe.config
+E:\DarkTao [Classic]\DarkTao V5695\AccServer\obj\Debug\AccServer.exe
+E:\DarkTao [Classic]\DarkTao V5695\AccServer\obj\Debug\AccServer.pdb
+E:\DarkTao [Classic]\DarkTao V5695\AccServer\bin\Debug\AccServer.exe
+E:\DarkTao [Classic]\DarkTao V5695\AccServer\bin\Debug\AccServer.pdb
+D:\CO Stuff\5661 to 5375\AccServer\bin\Debug\AccServer.exe.config
+D:\CO Stuff\5661 to 5375\AccServer\obj\Debug\AccServer.exe
+D:\CO Stuff\5661 to 5375\AccServer\obj\Debug\AccServer.pdb
+D:\CO Stuff\5661 to 5375\AccServer\bin\Debug\AccServer.exe
+D:\CO Stuff\5661 to 5375\AccServer\bin\Debug\AccServer.pdb
+D:\CO Stuff\5661 to 5375\AccServer\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+D:\CO Stuff\5661 to 5375\AccServer5517\bin\Debug\AccServer.exe.config
+D:\CO Stuff\5661 to 5375\AccServer5517\obj\Debug\AccServer.exe
+D:\CO Stuff\5661 to 5375\AccServer5517\obj\Debug\AccServer.pdb
+D:\CO Stuff\5661 to 5375\AccServer5517\bin\Debug\AccServer.exe
+D:\CO Stuff\5661 to 5375\AccServer5517\bin\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\DB&ACC\AccServer5517\bin\Debug\AccServer.exe.config
+C:\Users\Administrator\Desktop\DB&ACC\AccServer5517\bin\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\DB&ACC\AccServer5517\bin\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\DB&ACC\AccServer5517\obj\Debug\AccServer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\DB&ACC\AccServer5517\obj\Debug\AccServer.csproj.CopyComplete
+C:\Users\Administrator\Desktop\DB&ACC\AccServer5517\obj\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\DB&ACC\AccServer5517\obj\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\Server Files\Auth Server\bin\Debug\AccServer.exe.config
+C:\Users\Administrator\Desktop\Server Files\Auth Server\bin\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\Server Files\Auth Server\bin\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\Server Files\Auth Server\obj\Debug\AccServer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Server Files\Auth Server\obj\Debug\AccServer.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Server Files\Auth Server\obj\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\Server Files\Auth Server\obj\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\Auth Server\bin\Debug\AccServer.exe.config
+C:\Users\Administrator\Desktop\Auth Server\bin\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\Auth Server\bin\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\Auth Server\obj\Debug\AccServer.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Auth Server\obj\Debug\AccServer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Auth Server\obj\Debug\AccServer.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Auth Server\obj\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\Auth Server\obj\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\Auth Server\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Administrator\Desktop\Auth Server\bin\Debug\Google.Protobuf.dll
+C:\Users\Administrator\Desktop\Auth Server\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Desktop\Auth Server\bin\Debug\Renci.SshNet.dll
+C:\Users\Administrator\Desktop\Auth Server\bin\Debug\Google.Protobuf.xml
+C:\Users\Administrator\Desktop\Auth Server\bin\Debug\MySql.Data.xml
+C:\Users\Administrator\Desktop\Auth Server\bin\Debug\Renci.SshNet.xml
+D:\CO Stuff\COZone 27-8\Auth Server\bin\Debug\AccServer.exe.config
+D:\CO Stuff\COZone 27-8\Auth Server\obj\Debug\AccServer.exe
+D:\CO Stuff\COZone 27-8\Auth Server\obj\Debug\AccServer.pdb
+D:\CO Stuff\COZone 27-8\Auth Server\bin\Debug\AccServer.exe
+D:\CO Stuff\COZone 27-8\Auth Server\bin\Debug\AccServer.pdb
+D:\CO Stuff\COZone 27-8\Auth Server\bin\Debug\BouncyCastle.Crypto.dll
+D:\CO Stuff\COZone 27-8\Auth Server\bin\Debug\Google.Protobuf.dll
+D:\CO Stuff\COZone 27-8\Auth Server\bin\Debug\MySql.Data.dll
+D:\CO Stuff\COZone 27-8\Auth Server\bin\Debug\Renci.SshNet.dll
+D:\CO Stuff\COZone 27-8\Auth Server\bin\Debug\Google.Protobuf.xml
+D:\CO Stuff\COZone 27-8\Auth Server\bin\Debug\MySql.Data.xml
+D:\CO Stuff\COZone 27-8\Auth Server\bin\Debug\Renci.SshNet.xml
+D:\CO Stuff\COZone 27-8\Auth Server\obj\Debug\AccServer.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\MyClassic\Auth Server\bin\Debug\AccServer.exe.config
+C:\Users\user\Desktop\MyClassic\Auth Server\bin\Debug\AccServer.exe
+C:\Users\user\Desktop\MyClassic\Auth Server\bin\Debug\AccServer.pdb
+C:\Users\user\Desktop\MyClassic\Auth Server\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\user\Desktop\MyClassic\Auth Server\bin\Debug\Google.Protobuf.dll
+C:\Users\user\Desktop\MyClassic\Auth Server\bin\Debug\MySql.Data.dll
+C:\Users\user\Desktop\MyClassic\Auth Server\bin\Debug\Renci.SshNet.dll
+C:\Users\user\Desktop\MyClassic\Auth Server\bin\Debug\Google.Protobuf.xml
+C:\Users\user\Desktop\MyClassic\Auth Server\bin\Debug\MySql.Data.xml
+C:\Users\user\Desktop\MyClassic\Auth Server\bin\Debug\Renci.SshNet.xml
+C:\Users\user\Desktop\MyClassic\Auth Server\obj\Debug\AccServer.csprojAssemblyReference.cache
+C:\Users\user\Desktop\MyClassic\Auth Server\obj\Debug\AccServer.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\MyClassic\Auth Server\obj\Debug\AccServer.csproj.CopyComplete
+C:\Users\user\Desktop\MyClassic\Auth Server\obj\Debug\AccServer.exe
+C:\Users\user\Desktop\MyClassic\Auth Server\obj\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\bin\Debug\AccServer.exe.config
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\bin\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\bin\Debug\AccServer.pdb
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\bin\Debug\Google.Protobuf.dll
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\bin\Debug\Renci.SshNet.dll
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\bin\Debug\Google.Protobuf.xml
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\bin\Debug\MySql.Data.xml
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\bin\Debug\Renci.SshNet.xml
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\obj\Debug\AccServer.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\obj\Debug\AccServer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\obj\Debug\AccServer.csproj.CopyComplete
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\obj\Debug\AccServer.exe
+C:\Users\Administrator\Desktop\MyClassic\Auth Server\obj\Debug\AccServer.pdb

@@ -1,0 +1,47 @@
+﻿@model PhoenixConquer.Models.LoginUser
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/page.cshtml";
+}
+
+
+<section class="bg-image bg-image-sm" style="background-image: url('@Url.Content("~/img/bg/bg-login.jpg")');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-4 mx-auto">
+                <div class="card m-b-0">
+                    <div class="card-header">
+                        <h4 class="card-title"><i class="fa fa-sign-in"></i> Login to your account</h4>
+                    </div>
+                    <div class="card-block">
+                        @using (Html.BeginForm("login", "user", new { ReturnUrl = ViewBag.ReturnUrl },
+            FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            <span class="text-danger">@ViewBag.Message</span>
+                            <br />
+                            <div class="form-group input-icon-left">
+                                <i class="fa fa-user"></i>
+                                <input type="text" class="form-control" name="Username" placeholder="Username" required="">
+                                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group input-icon-left">
+                                <i class="fa fa-lock"></i>
+                                <input type="password" class="form-control" name="Password" placeholder="Password" required="">
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-actions">
+                                <div class="g-recaptcha" data-sitekey="@System.Web.Configuration.WebConfigurationManager.AppSettings["captchaSiteKey"]"></div>
+                            </div>
+                            <br />
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            <br />
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

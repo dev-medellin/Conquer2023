@@ -1,0 +1,165 @@
+﻿@{
+    ViewBag.Title = "Shop";
+    Layout = "~/Views/page.cshtml";
+}
+
+
+<div class="site-content" role="main">
+    <section class="pt-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-11 mx-auto py-5 py-lg-8 overflow-hidden" data-parallax="scroll" data-image-src="https://static.giantbomb.com/uploads/original/5/57793/2945319-6341557407-AgZvN.jpg">
+                    <div class="overlay" style="background-color: rgb(53, 54, 56) !important; opacity: 0.75 !important;"></div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-10 col-lg-8 order-2 order-md-2 text-center text-md-left">
+                                <h1 class="text-white font-weight-bold display-5">Important Rules</h1>
+                                <p class="text-light pr-md-5 pr-lg-0">Upon making a donation you automatically agree to all terms below.</p>
+                                <p class="text-light pr-md-5 pr-lg-0">* You agree, that all transactions made are final and will not be refunded in any way.</p>
+                                <p class="text-light pr-md-5 pr-lg-0">* You agree, that virtual assets such as player items will not be restored if lost or stolen.</p>
+                                <p class="text-light pr-md-5 pr-lg-0">* Items are claimed from the Prize NPC.</p>
+                                <p class="text-light pr-md-5 pr-lg-0">* If you got banned for any reason there will be NO REFUNDS.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-4">
+        <div class="container">
+            <div class="row row-md">
+
+                <div class="col-sm-6 col-md-4 col-lg-3 card-group">
+                    <div class="card card-sm mb-4">
+                        <div class="card-body d-flex align-items-start flex-column">
+                            <h5 class="card-title mb-auto">
+                                <i class="ya ya-check-circle text-success" data-toggle="tooltip" data-placement="bottom" data-title="Available" data-original-title="" title=""></i>
+                                <a href="#">10 donation points</a>
+                            </h5>
+                            <div class="star d-flex font-size-md mt-1 mr-2">
+                                <i class="ya ya-star text-warning"></i>
+                                <i class="ya ya-star text-warning"></i>
+                                <i class="ya ya-star text-muted"></i>
+                                <i class="ya ya-star text-muted"></i>
+                                <i class="ya ya-star text-muted"></i>
+                            </div>
+                            <ul class="list-unstyled font-size-sm mt-3">
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer d-flex align-items-center">
+                            <div class="h3 font-weight-normal text-dark mb-0 mr-2">10$</div>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="custom" value="@Session["user"].ToString()">
+                                <input type="hidden" name="hosted_button_id" value="3NLM5F8J9EX5C">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+
+
+                        </div>
+                    </div>
+                    <!-- end .card -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 card-group">
+                    <div class="card card-sm mb-4">
+                        <div class="card-body d-flex align-items-start flex-column">
+                            <h5 class="card-title mb-auto">
+                                <i class="ya ya-check-circle text-success" data-toggle="tooltip" data-placement="bottom" data-title="Available" data-original-title="" title=""></i>
+                                <a href="#">22 donation points</a>
+                            </h5>
+                            <div class="star d-flex font-size-md mt-1 mr-2">
+                                <i class="ya ya-star text-warning"></i>
+                                <i class="ya ya-star text-warning"></i>
+                                <i class="ya ya-star text-warning"></i>
+                                <i class="ya ya-star text-muted"></i>
+                                <i class="ya ya-star text-muted"></i>
+                            </div>
+                            <ul class="list-unstyled font-size-sm mt-3">
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer d-flex align-items-center">
+                            <div class="h3 font-weight-normal text-dark mb-0 mr-2">$20</div>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="custom" value="@Session["user"].ToString()">
+                                <input type="hidden" name="hosted_button_id" value="49SKPBQUJ4ZNW">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+
+                        </div>
+                    </div>
+                    <!-- end .card -->
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 card-group">
+                    <div class="card card-sm mb-4">
+                        <div class="card-body d-flex align-items-start flex-column">
+                            <h5 class="card-title mb-auto">
+                                <i class="ya ya-check-circle text-success" data-toggle="tooltip" data-placement="bottom" data-title="Available" data-original-title="" title=""></i>
+                                <a href="#">35 donation points</a>
+                            </h5>
+                            <div class="star d-flex font-size-md mt-1 mr-2">
+                                <i class="ya ya-star text-warning"></i>
+                                <i class="ya ya-star text-warning"></i>
+                                <i class="ya ya-star text-warning"></i>
+                                <i class="ya ya-star text-warning"></i>
+                                <i class="ya ya-star text-warning"></i>
+                            </div>
+                            <ul class="list-unstyled font-size-sm mt-3">
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer d-flex align-items-center">
+                            <div class="h3 font-weight-normal text-dark mb-0 mr-2">$30</div>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="custom" value="@Session["user"].ToString()">
+                                <input type="hidden" name="hosted_button_id" value="XYCEL5HXTW4EJ">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+
+                        </div>
+                    </div>
+                    <!-- end .card -->
+                </div>
+                
+            </div>
+            <div class="example mt-2 mt-lg-5">
+                <div class="table-responsive">
+                    <table class="table table-bordered align-items-center">
+                        <thead>
+                            <tr>
+
+                                <th scope="col">Item</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Price in DPs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col">VIP-6 30 days</th>
+                                <th scope="col">Tradable VIP Scroll for 30 days</th>
+                                <th scope="col">20</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Garments and Accessories</th>
+                                <th scope="col">Tradable garment and accessory of your choice</th>
+                                <th scope="col">Can vary</th>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- end pagination -->
+        </div>
+    </section>
+</div>

@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.CustomTitle = "Fire Rankings";
+    ViewBag.Title = "Fire Rankings";
+    Layout = "~/Views/page.cshtml";
+}
+<div class="registration-login">
+    <div class="page normal-page">
+        <div class="container ">
+
+             <style>
+                .table td {
+                    color: lightpink;
+                }
+            </style>
+            <div class="col-lg-12 col-md-12 register-form-wrapper wcontainer">
+
+                <div class="title-wrapper">
+                    <h3 class="widget-title">
+                        
+                    </h3>
+                    <div class="clear"></div>
+                </div>
+               
+                <table class="table" id="columnData2">
+                    <!-- table head -->
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Level</th>
+                            <th>Potency</th>
+                            <th>Guild</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (var player in PhoenixConquer.Controllers.PageController.Topers(PhoenixConquer.Controllers.PageController.TopsType.Fire))
+                            {
+                                <tr>
+                                    <td>@player.Name</td>
+                                    <td>@player.Level</td>
+                                    <td>@string.Format("{0:n0}", int.Parse(player.Param.ToString()))</td>
+                                    <td>@player.Guild</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+</div>

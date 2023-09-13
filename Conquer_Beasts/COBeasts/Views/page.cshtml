@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Conquer ZONE | Home</title>
+    <!-- css: theme -->
+    <link rel="stylesheet" href="~/css/theme.min.css?ver=5.0.0">
+</head>
+<body class="fixed-navbar">
+    <div id="fb-root"></div>
+    <div class="site">
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="ya ya-bar"></i>
+                    </button>
+                    <a class="navbar-brand" href="~/home">Conquer ZONE</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/home" aria-haspopup="true" aria-expanded="false">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/register" aria-haspopup="true" aria-expanded="false">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/downloads" aria-haspopup="true" aria-expanded="false">Downloads</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/store" aria-haspopup="true" aria-expanded="false">Store</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="navbar-nav navbar-right flex-row d-flex align-items-center">
+                        @{
+                            if (Session["user"] == null)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/login">
+                                        <span class="d-none d-md-inline-block">Login</span>
+                                        <span class="d-inline-block d-md-none"><i class="ya ya-user"></i></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/forgot_password">
+                                        <span class="d-none d-md-inline-block" style="color:orange">Forgot Pass?</span>
+                                        <span class="d-inline-block d-md-none"><i class="ya ya-user"></i></span>
+                                    </a>
+                                </li>
+                            }
+                            else
+                            {
+
+                                <li class="nav-item dropdown dropdown-cart d-block">
+                                    <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="ya ya-user"></i>
+                                        <span class="badge badge-warning"></span>
+                                        @Session["user"].ToString()
+                                    </a>
+                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+                                        <a class="dropdown-item" href="~/store"><i class="ya ya-shopping-cart"></i> Store</a>
+                                        <a class="dropdown-item" href="~/change_password"><i class="ya ya-gear"></i> Change Password</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="~/logout"><i class="ya ya-logout"></i> Logout</a>
+                                    </div>
+                                </li>
+                            }
+                        }
+
+                    </ul>
+                    <!-- end .navbar-nav -->
+                </div>
+            </nav>
+        </header>
+        <!-- end .site-header -->
+        @RenderBody()
+        <!-- end .site-content -->
+        <footer class="site-footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0 pb-1 pb-md-0">
+                        <div class="footer-title">About Conquer ZONE</div>
+                        <p>Conquer ZONE is an un-official private server of the conquer online game and is not related to the official game in any method.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-title">Our Partners</div>
+                        <div class="footer-tags">
+                            <a href="http://elitepvpers.com">Elitepvpers</a>
+                            <a href="http://www.xtremetop100.com/in.php?site=1132367848">Xtremetop100</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <div class="container d-flex flex-column flex-md-row">
+                        @*<div class="order-2 order-md-1">
+                            <div class="footer-links d-none d-md-inline-block">
+                                <a href="#">About Gameforest</a>
+                                <a href="#">Terms of Service</a>
+                                <a href="#">Documentation</a>
+                                <a href="#">Changelog</a>
+                            </div>
+
+                        </div>*@
+                        <div class="footer-social order-1 order-md-2 ml-md-auto text-center text-md-right">
+                            <span class="d-none d-sm-block mb-2">follow us on social media</span>
+                            <a href="https://www.facebook.com/Conquer ZONE/" target="_blank" data-toggle="tooltip" title="facebook"><i class="ya ya-facebook"></i></a>
+                            <a href="#" target="_blank" data-toggle="tooltip" title="twitter"><i class="ya ya-twitter"></i></a>
+                            <a href="#" target="_blank" data-toggle="tooltip" title="instagram"><i class="ya ya-instagram"></i></a>
+                            <a href="https://discord.gg/2eHFPM" target="_blank" data-toggle="tooltip" title="discord"><i class="ya ya-discord"></i></a>
+                            <a href="#" target="_blank" data-toggle="tooltip" title="youtube"><i class="ya ya-youtube"></i></a>
+                            <a href="#" target="_blank" data-toggle="tooltip" title="github"><i class="ya ya-github"></i></a>
+                            <a href="#" target="_blank" data-toggle="tooltip" title="twitch"><i class="ya ya-twitch"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+        </footer>
+        <!-- end .site-footer -->
+    </div>
+    <!-- end .site -->
+    <!-- js: vendor -->
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- js: theme -->
+    <script src="~/js/theme.bundle.min.js?ver=5.0.0"></script>
+    <!-- js: plugins -->
+    <script src="~/plugins/parallax/parallax.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="~/plugins/easypiechart/jquery.easypiechart.min.js"></script>
+    <script>
+        $(function () {
+            $('.easypiechart').easyPieChart();
+        });
+    </script>
+    <!-- js: theme settings -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-87018219-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-87018219-1');
+
+        var gameforest = {
+            disqus: 'gameforestyakuzieu',
+            facebook: {
+                lang: 'en_US',
+                version: 'v3.2',
+                id: '',
+            }
+        }
+    </script>
+</body>
+</html>

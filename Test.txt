@@ -1,0 +1,25 @@
+Client DragonZone 
+size: 440mb
+http://www.mediafire.com/file/vibgcblki6xttgr/DragonZone.7z/file
+
+Patch
+https://www.mediafire.com/file/fa1v58nqunblinb/Patch.rar/file
+
+
+
+Download Hamachi 
+Size: 8mb
+Link
+https://www.vpn.net/
+
+1.Open hamachi->Network->join network-> and login this id and password.
+
+id: ServerTestPH
+pass: iloveclassic
+
+
+------------------------------------------
+Conquer Game Account
+Username: 2
+Password: 2
+
