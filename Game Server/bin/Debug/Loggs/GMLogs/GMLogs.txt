@@ -78,3 +78,8 @@
 [GMLogs][TQ]Kyaly[GM] exit 
 [GMLogs][TQ]Kyaly[GM] scroll tc 
 [GMLogs][TQ]Kyaly[GM] clear 
+[GMLogs][TQ]Kyaly[GM] item 188180 0 0 0 0 0 
+[GMLogs][TQ]Kyaly[GM] cps 0 
+[GMLogs][TQ]Kyaly[GM] cps 0 
+[GMLogs][Owner]Arthur cps 1 
+[GMLogs][Owner]Arthur cps 1000 

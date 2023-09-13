@@ -1,1 +1,7 @@
 [Chat][TQ]Kyaly[GM] to All  #65@clear#65
+[Chat][TQ]Kyaly[GM] to All  nice
+[Chat][TQ]Kyaly[GM] to All  @item 188180 0 0 0 0 0
+[Chat][TQ]Kyaly[GM] to All  @cps 0
+[Chat][TQ]Kyaly[GM] to All  #65@cps 0#65
+[Chat][Owner]Arthur to All  @cps 1
+[Chat][Owner]Arthur to All  @cps 1000

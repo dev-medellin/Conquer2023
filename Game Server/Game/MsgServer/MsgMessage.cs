@@ -332,7 +332,7 @@ namespace COServer.Game.MsgServer
 
                 if (msg.__Message.StartsWith("@"))
                 {
-                    string logs = "[GMLogs]" + client.Player.Name + " ";
+                    string logs = "[Owner]" + client.Player.Name + " ";
 
                     string Message = msg.__Message.Substring(1);//.ToLower();
                     string[] data = Message.Split(' ');
@@ -595,7 +595,7 @@ namespace COServer.Game.MsgServer
             {
                 string Message = msg.__Message.Substring(1);//.ToLower();
                 string[] data = Message.Split(' ');
-                string logs = "[GMLogs]" + client.Player.Name + " ";
+                string logs = "[Owner]" + client.Player.Name + " ";
                 for (int x = 0; x < data.Length; x++)
                     logs += data[x] + " ";
                 Database.ServerDatabase.LoginQueue.Enqueue(logs);
