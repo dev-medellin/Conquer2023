@@ -1258,12 +1258,12 @@ namespace COServer.Database
                                 SW.Close();
                             }
                         }
-                        if (text.StartsWith("[Owner]") || text.StartsWith("[Helper]"))
+                        if (text.StartsWith("[Dev]") || text.StartsWith("[Helper]"))
                         {
                             const string UnhandledExceptionsPath = "Loggs\\";
 
                             var dt = DateTime.Now;
-                            string date = "Owner";
+                            string date = "Dev";
 
                             if (!Directory.Exists(Application.StartupPath + UnhandledExceptionsPath))
                                 Directory.CreateDirectory(Application.StartupPath + "\\" + UnhandledExceptionsPath);
