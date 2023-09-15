@@ -167,11 +167,11 @@ namespace AccServer
                             if (Fw.Type == Forward.ForwardType.Ready)
                             {
                                 player.Account.SaveIP();
-                                TransferCipher transferCipher = new TransferCipher("EypKhLvYJ3zdLCTyz9Ak8RAgM78tY5F32b7CUXDuLDJDFBH8H67BWy9QThmaN5VS", "MyqVgBf3ytALHWLXbJxSUX4uFEu3Xmz2UAY9sTTm8AScB7Kk2uwqDSnuNJske4BJ", "96.9.211.105");
+                                TransferCipher transferCipher = new TransferCipher("EypKhLvYJ3zdLCTyz9Ak8RAgM78tY5F32b7CUXDuLDJDFBH8H67BWy9QThmaN5VS", "MyqVgBf3ytALHWLXbJxSUX4uFEu3Xmz2UAY9sTTm8AScB7Kk2uwqDSnuNJske4BJ", "26.34.47.52");
                                 uint[] encrypted = transferCipher.Encrypt(new uint[] { player.Account.EntityID, (uint)player.Account.State });
                                 Fw.Identifier = encrypted[0];
                                 Fw.State = (uint)encrypted[1];
-                                Fw.IP = "96.9.211.105";
+                                Fw.IP = "26.34.47.52";
                                 Fw.Port = 5816;
                                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                                 Console.WriteLine("{0} has been Login to server {1}! IP:[{2}].", player.Info.Username, player.Info.Server, player.IP);

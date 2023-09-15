@@ -4,7 +4,7 @@
   <description asmv2:publisher="COServer" asmv2:product="COServer" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="COServer.exe.manifest" size="7911">
@@ -14,7 +14,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BhJPplhdr+cmMa/JmwmsvZUdAKUX4nMYBjcfbJw2l2E=</dsig:DigestValue>
+        <dsig:DigestValue>My+XT+oB0w4Xh9beKm5CelTxyuBCiglj7zNv+i4wbvI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

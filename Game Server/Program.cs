@@ -145,7 +145,7 @@ namespace COServer
             public static uint PhysicalDamage = 100;// + 150%
 
             //interServer
-            public static string InterServerAddress = "96.9.211.105";
+            public static string InterServerAddress = "26.34.47.52";
             public static ushort InterServerPort = 0;
             public static bool IsInterServer = false;
         }
@@ -261,7 +261,7 @@ namespace COServer
                 SetConsoleCtrlHandler(handlerKeepAlive, true);
                 TransferCipher.Key = Encoding.ASCII.GetBytes("EypKhLvYJ3zdLCTyz9Ak8RAgM78tY5F32b7CUXDuLDJDFBH8H67BWy9QThmaN5VS");
                 TransferCipher.Salt = Encoding.ASCII.GetBytes("MyqVgBf3ytALHWLXbJxSUX4uFEu3Xmz2UAY9sTTm8AScB7Kk2uwqDSnuNJske4BJ");
-                transferCipher = new TransferCipher("96.9.211.105");
+                transferCipher = new TransferCipher("26.34.47.52");
                 if (ServerConfig.IsInterServer == false)
                 {
                     GameServer = new ServerSockets.ServerSocket(

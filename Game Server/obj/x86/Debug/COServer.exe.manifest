@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="COServer.exe" size="3566592">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="COServer.exe" size="3564544">
       <assemblyIdentity name="COServer" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iMkdYkdcwL5vl+k1/5gTeAQJx1WsOPboUWzHnIxR4E4=</dsig:DigestValue>
+        <dsig:DigestValue>HPFOFBGHbDcacDeCgH0joL2LbyLqsK8eVg34TaABcJw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -126,13 +126,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="COServer.exe.config" size="146">
+  <file name="COServer.exe.config" size="144">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GDMa4G5bOCPeWn0hnN/opCeVGXWVPIwNURasYhti16U=</dsig:DigestValue>
+      <dsig:DigestValue>qocYo5fZcjYk+qYJrTWRjTvg6tHQ3KyuT2t4J5bZJ/E=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Logo.ico" size="2238">

@@ -1,0 +1,14 @@
+----Exception message----
+Could not find a part of the path 'C:\Users\MY PC\Desktop\Conquer2023\Database5517\Nobility'.
+----End of exception message----
+
+----Stack trace----
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at COServer.Database.NobilityTable.Load() in C:\Users\MY PC\Desktop\Conquer2023\Game Server\Database\NobilityTable.cs:line 38
+   at COServer.Database.Server.Initialize() in C:\Users\MY PC\Desktop\Conquer2023\Game Server\Database\Server.cs:line 213
+   at COServer.Program.Main(String[] args) in C:\Users\MY PC\Desktop\Conquer2023\Game Server\Program.cs:line 255
+----End of stack trace----
+
