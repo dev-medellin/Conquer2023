@@ -157,7 +157,7 @@ namespace COServer.Game.MsgMonster
         public void SendBossSysMesage(string KillerName, int StudyPoints, Game.MsgServer.MsgMessage.ChatMode ChatType = Game.MsgServer.MsgMessage.ChatMode.Center
           , Game.MsgServer.MsgMessage.MsgColor color = Game.MsgServer.MsgMessage.MsgColor.red)
         {
-            SendSysMesage("The " + Name.ToString() + " has been destroyed by the team " + KillerName.ToString() + "`s ! All team members received " + StudyPoints.ToString() + " Study Points!", ChatType, color);
+            SendSysMesage("The " + Name.ToString() + " has been destroyed by the team " + KillerName.ToString() + "`s and he/she recieved 100,000 cps ! All team members received " + StudyPoints.ToString() + " Study Points!", ChatType, color);
         }
         public void Dead(ServerSockets.Packet stream, Client.GameClient killer, uint aUID, Role.GameMap GameMap, bool CounterKill = false)
         {
@@ -197,10 +197,10 @@ namespace COServer.Game.MsgMonster
 
                 if (killer != null && killer.Player != null && !CounterKill)
                 {
-                    uint val = (uint)(Role.Core.Random.Next(1, 16));
+                    uint val = (uint)(Role.Core.Random.Next(100, 400));
 
                     if (killer.Player.VipLevel == 6)
-                        val = (uint)(Role.Core.Random.Next(1, 21));
+                        val = (uint)(Role.Core.Random.Next(500, 1000));
 
                     killer.MobsKilled++;
                     killer.TotalMobsKilled++;
@@ -216,7 +216,7 @@ namespace COServer.Game.MsgMonster
                     }
                     if (killer.TotalSouls >= 300000)
                     {
-                        killer.SendSysMesage("You`ve killed 300,000 soul, Go find the 300kGeneral in TwinCity (463,366) to claim your 30 PVE Points!", MsgMessage.ChatMode.TopLeft);
+                        killer.SendSysMesage("You`ve killed 300,000 soul, Go find the SoulCollector in TwinCity (460,374) to claim your 30 PVE Points!", MsgMessage.ChatMode.TopLeft);
 
                     }
                     if (Role.MyMath.Success(0.1))
@@ -4868,6 +4868,8 @@ namespace COServer.Game.MsgMonster
                                     }
                                 }
                             }
+                            killer.Player.ConquerPoints += 100000;
+                            killer.Player.BossPoints += 1;
                             if (killer.Player.SubClass != null)
                                 killer.Player.SubClass.AddStudyPoints(killer, GetStudyPoints, stream);
                             SendBossSysMesage(killer.Player.Name, GetStudyPoints, MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.white);
@@ -4944,7 +4946,7 @@ namespace COServer.Game.MsgMonster
                             SendSysMesage("The PurpleBanshee has been destroyed by " + killer.Player.Name.ToString() + ", he got the Life`sEye", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
                        
 #else
-                            killer.CreateBoxDialog("You've found an Life`sEye.");
+                            killer.CreateBoxDialog("You've found an Dragon Soul Pack.");
                             SendSysMesage("The PurpleBanshee has been destroyed by " + killer.Player.Name.ToString() + ", he got the Life`sEye", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
 
 #endif
@@ -5076,6 +5078,8 @@ namespace COServer.Game.MsgMonster
                             }
                         }
                         DistributeBossPoints();
+                        killer.Player.ConquerPoints += 100000;
+                        killer.Player.BossPoints += 1;
                         if (killer.Player.SubClass != null)
                             killer.Player.SubClass.AddStudyPoints(killer, GetStudyPoints, stream);
                         SendBossSysMesage(killer.Player.Name, GetStudyPoints, MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.white);
@@ -5154,6 +5158,8 @@ namespace COServer.Game.MsgMonster
                                 }
                             }
                         }
+                        killer.Player.ConquerPoints += 100000;
+                        killer.Player.BossPoints += 1;
                         if (killer.Player.SubClass != null)
                             killer.Player.SubClass.AddStudyPoints(killer, GetStudyPoints, stream);
                         SendBossSysMesage(killer.Player.Name, GetStudyPoints, MsgServer.MsgMessage.ChatMode.Center, MsgServer.MsgMessage.MsgColor.red);
@@ -5241,29 +5247,29 @@ namespace COServer.Game.MsgMonster
                                 }
                             }
                         }
-                        for (int x = 0; x < 5; x++)
-                        {
+                        //for (int x = 0; x < 5; x++)
+                        //{
 
-                            MsgServer.MsgGameItem DataItem = new MsgServer.MsgGameItem();
-                            DataItem.ITEM_ID = Database.ItemType.PowerExpBall;
-                            Database.ItemType.DBItem DBItem;
-                            if (Database.Server.ItemsBase.TryGetValue(Database.ItemType.DragonBall, out DBItem))
-                            {
-                                DataItem.Durability = DataItem.MaximDurability = DBItem.Durability;
-                            }
-                            DataItem.Color = Role.Flags.Color.Red;
-                            ushort xx = (ushort)Program.GetRandom.Next(X - 10, X + 10);
-                            ushort yy = (ushort)Program.GetRandom.Next(Y - 10, Y + 10);
-                            if (killer.Map.AddGroundItem(ref xx, ref yy, 7))
-                            {
-                                MsgFloorItem.MsgItem DropItem = new MsgFloorItem.MsgItem(DataItem, xx, yy, MsgFloorItem.MsgItem.ItemType.Item, 0, DynamicID, Map, killer.Player.UID, true, GMap);
+                        //    MsgServer.MsgGameItem DataItem = new MsgServer.MsgGameItem();
+                        //    DataItem.ITEM_ID = Database.ItemType.PowerExpBall;
+                        //    Database.ItemType.DBItem DBItem;
+                        //    if (Database.Server.ItemsBase.TryGetValue(Database.ItemType.DragonBall, out DBItem))
+                        //    {
+                        //        DataItem.Durability = DataItem.MaximDurability = DBItem.Durability;
+                        //    }
+                        //    DataItem.Color = Role.Flags.Color.Red;
+                        //    ushort xx = (ushort)Program.GetRandom.Next(X - 10, X + 10);
+                        //    ushort yy = (ushort)Program.GetRandom.Next(Y - 10, Y + 10);
+                        //    if (killer.Map.AddGroundItem(ref xx, ref yy, 7))
+                        //    {
+                        //        MsgFloorItem.MsgItem DropItem = new MsgFloorItem.MsgItem(DataItem, xx, yy, MsgFloorItem.MsgItem.ItemType.Item, 0, DynamicID, Map, killer.Player.UID, true, GMap);
 
-                                if (killer.Map.EnqueueItem(DropItem))
-                                {
-                                    DropItem.SendAll(stream, MsgFloorItem.MsgDropID.Visible);
-                                }
-                            }
-                        }
+                        //        if (killer.Map.EnqueueItem(DropItem))
+                        //        {
+                        //            DropItem.SendAll(stream, MsgFloorItem.MsgDropID.Visible);
+                        //        }
+                        //    }
+                        //}
                         if (killer.Team != null)
                         {
                             foreach (var member in killer.Team.Temates)
@@ -5277,6 +5283,8 @@ namespace COServer.Game.MsgMonster
                                 }
                             }
                         }
+                        killer.Player.ConquerPoints += 100000;
+                        killer.Player.BossPoints += 1;
                         if (killer.Player.SubClass != null)
                             killer.Player.SubClass.AddStudyPoints(killer, GetStudyPoints, stream);
                         if (Family.ID == 4145)
@@ -5348,6 +5356,8 @@ namespace COServer.Game.MsgMonster
                                 }
                             }
                         }
+                        //killer.Player.ConquerPoints += 100000;
+                        //killer.Player.BossPoints += 1;
                         if (killer.Player.SubClass != null)
                             killer.Player.SubClass.AddStudyPoints(killer, GetStudyPoints, stream);
                         SendBossSysMesage(killer.Player.Name, GetStudyPoints, MsgServer.MsgMessage.ChatMode.Center, MsgServer.MsgMessage.MsgColor.red);

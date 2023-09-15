@@ -95,3 +95,4 @@ C:\Users\Administrator\Desktop\MyClassic\Game Server\obj\x86\Debug\COServer.appl
 C:\Users\Administrator\Desktop\MyClassic\Game Server\obj\x86\Debug\COServer.csproj.CopyComplete
 C:\Users\Administrator\Desktop\MyClassic\Game Server\obj\x86\Debug\COServer.exe
 C:\Users\Administrator\Desktop\MyClassic\Game Server\obj\x86\Debug\COServer.pdb
+C:\Users\Administrator\Desktop\MyClassic\Game Server\obj\x86\Debug\COServer.csproj.AssemblyReference.cache

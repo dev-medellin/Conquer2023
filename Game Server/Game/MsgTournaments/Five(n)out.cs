@@ -8,7 +8,7 @@ namespace COServer.Game.MsgTournaments
     public class Fivenout : ITournament
     {
 
-        public const uint RewardConquerPoints =15000;
+        public const uint RewardConquerPoints =150000;
         public ProcesType Process { get; set; }
         public DateTime StartTimer = new DateTime();
         public DateTime InfoTimer = new DateTime();
@@ -88,9 +88,10 @@ namespace COServer.Game.MsgTournaments
                 {
                     var winner = MapPlayers().First();
 
-                    MsgSchedules.SendSysMesage("" + winner.Player.Name + " has won Five(n)out and received " + RewardConquerPoints.ToString() + " ConquerPoints and PowerExpBall.", MsgServer.MsgMessage.ChatMode.TopLeftSystem, MsgServer.MsgMessage.MsgColor.white);
+                    MsgSchedules.SendSysMesage("" + winner.Player.Name + " has won Five(n)out and received " + RewardConquerPoints.ToString() + " ConquerPoints, 2 PVEPoints and PowerExpBall.", MsgServer.MsgMessage.ChatMode.TopLeftSystem, MsgServer.MsgMessage.MsgColor.white);
                     winner.Player.ConquerPoints += RewardConquerPoints;
-                    string reward = "[EVENT]" + winner.Player.Name + " has won and received " + RewardConquerPoints + " CPs and PowerExpBall from Five(n)out.";
+                    winner.Player.PVEPoints += 2;
+                    string reward = "[EVENT]" + winner.Player.Name + " has won and received " + RewardConquerPoints + " CPs, PVE points and PowerExpBall from Five(n)out.";
                     //                Program.//                DiscordAPI.Enqueue($"``{reward}``");
 
                     Database.ServerDatabase.LoginQueue.Enqueue(reward);

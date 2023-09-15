@@ -228,7 +228,7 @@ namespace PhoenixConquer.Controllers
                 {
                     string content = "Hello " + model.Username + ",\n\nHere is your password recovery link.\n"
             + "\n\n\nhttp://conquer.zone/reset_password?user=" + model.Username + "&token=" + token +
-            "\n\nPlease dont give your info to anyone.\n\nConquerZone."
+            "\n\nPlease dont give your info to anyone.\n\nAlticeConquer."
             + "\n\n\nTHIS IS A NO REPLY MESSAGE. ANY REPLY TO THIS WILL NOT BE READ.";
                     using (SmtpClient client = new SmtpClient())
                     {
@@ -238,7 +238,7 @@ namespace PhoenixConquer.Controllers
                         client.DeliveryMethod = SmtpDeliveryMethod.Network;
                         client.Credentials = new System.Net.NetworkCredential(System.Web.Configuration.WebConfigurationManager.AppSettings["RestoreGmail"].ToString(), System.Web.Configuration.WebConfigurationManager.AppSettings["RestoreGmailPassword"].ToString());
                         client.Timeout = 600000;
-                        using (MailMessage mm = new MailMessage(System.Web.Configuration.WebConfigurationManager.AppSettings["RestoreGmail"].ToString(), model.Email, "ConquerZone - Password Recovery for " + model.Username, content))
+                        using (MailMessage mm = new MailMessage(System.Web.Configuration.WebConfigurationManager.AppSettings["RestoreGmail"].ToString(), model.Email, "AlticeConquer - Password Recovery for " + model.Username, content))
                             client.Send(mm);
                     }
                 }

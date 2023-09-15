@@ -1,0 +1,75 @@
+[Dev][Dev]Arthur[PM][PM]tele 1002 443 360 
+[Dev][Dev]Arthur[PM][PM]tele 1002 443 378 
+[Dev][Dev]Arthur[PM][PM]tele 1002 421 378 
+[Dev][Dev]Arthur[PM][PM]tele 1002 421 375 
+[Dev][Dev]Arthur[PM][PM]tele 1002 421 382 
+[Dev][Dev]Arthur[PM][PM]tele 1002 421 381 
+[Dev][Dev]Arthur[PM][PM]tele 1002 412 376 
+[Dev][Dev]Arthur[PM][PM]tele 1002 412 366 
+[Dev][Dev]Arthur[PM][PM]tele 1002 412 361 
+[Dev][Dev]Arthur[PM][PM]tele 1700 608 632 
+[Dev][Dev]Arthur[PM][PM]vip 6 
+[Dev][Dev]Arthur[PM][PM]tele 1002 442 360 
+[Dev][Dev]Arthur[PM][PM]item 720549 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]item 800020 0 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]clear 
+[Dev][Dev]Arthur[PM][PM]life 
+[Dev][Dev]Arthur[PM][PM]clas 45 
+[Dev][Dev]Arthur[PM][PM]clas 55 
+[Dev][Dev]Arthur[PM][PM]class 55 
+[Dev][Dev]Arthur[PM][PM]class 45 
+[Dev][Dev]Arthur[PM][PM]cps 0 
+[Dev][Dev]Arthur[PM][PM]item 3004465 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]item 720957 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]item 720957 0 0 0 0 0 10 
+[Dev][Dev]Arthur[PM][PM]item 720957 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]clear 
+[Dev][Dev]Arthur[PM][PM]item 150269 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]item 721117 0 0 0 0 0 
+[Dev]wasss[PM]item 201009 0 0 0 0 0 
+[Dev]wasss[PM]item 201009 0 0 0 0 0 
+[Dev]wasss[PM]item 201009 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]item 723753 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]class 25 
+[Dev][Dev]Arthur[PM][PM]clear 
+[Dev][Dev]Arthur[PM][PM]class 15 
+[Dev][Dev]Arthur[PM][PM]item 723753 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]max_attack 100000 100000 
+[Dev][Dev]Arthur[PM][PM]tele 2054 425 407 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]revive 
+[Dev][Dev]Arthur[PM][PM]revive 
+[Dev][Dev]Arthur[PM][PM]max_attack 100000 100000 
+[Dev][Dev]Arthur[PM][PM]max_attack 1000000 1000000 
+[Dev][Dev]Arthur[PM][PM]clear 
+[Dev][Dev]Arthur[PM][PM]max_attack 1000000 1000000 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]max_attack 1000000 1000000 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]max_attack 1000000 1000000 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]max_attack 1000000 1000000 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]item 725067 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]item 136008 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]item 730007 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]item 730008 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]item 700103 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]item 183325 0 0 0 0 0 
+[Dev][Dev]Arthur[PM][PM]leave 
+[Dev][Dev]Arthur[PM][PM]exit 
+[Dev][Dev]Arthur[PM][PM]max_attack 2000000 2000000 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]max_attack 2000000 2000000 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]spwn_terato 
+[Dev][Dev]Arthur[PM][PM]clear 

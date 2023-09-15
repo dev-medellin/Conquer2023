@@ -79,6 +79,7 @@ namespace COServer.Game.MsgNpc
 
             }
         }
+
         [NpcAttribute(NpcID.Leveling)]
         public static void Leveling(Client.GameClient client, ServerSockets.Packet stream, byte Option, string Input, uint id)
         {

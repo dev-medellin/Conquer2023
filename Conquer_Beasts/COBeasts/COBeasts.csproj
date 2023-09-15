@@ -22,6 +22,8 @@
     <Use64BitIISExpress />
     <UseGlobalApplicationHostFile />
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,6 +50,30 @@
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.15.0.44797, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.15.0\lib\net452\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.15.0.44797, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.15.0\lib\net452\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.15.0.44797, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.15.0\lib\net452\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.15.0.44798, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.15.0\lib\net452\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.15.0.44797, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.15.0\lib\net452\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.15.0.44797, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.15.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.8\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -62,11 +88,29 @@
       <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.6.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -114,6 +158,8 @@
     <Content Include="img\brands\visual-studio.svg" />
     <Content Include="img\brands\windows.svg" />
     <Content Include="img\carousel-1.jpg" />
+    <Content Include="img\cover1.png" />
+    <Content Include="img\cover_altice1.jpg" />
     <Content Include="img\Game\1.jpg" />
     <Content Include="img\Game\2.jpg" />
     <Content Include="img\Game\3.jpg" />
@@ -127,6 +173,8 @@
     <Content Include="js\theme.bundle.min.js" />
     <Content Include="fonts\nucleo.ttf" />
     <Content Include="plugins\fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="fonts\understation.ttf" />
+    <Content Include="ApplicationInsights.config" />
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="plugins\bootstrap\js\bootstrap.bundle.min.js" />
@@ -241,6 +289,21 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.15.0\build\Microsoft.ApplicationInsights.DependencyCollector.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.15.0\build\Microsoft.ApplicationInsights.DependencyCollector.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.15.0\build\Microsoft.ApplicationInsights.DependencyCollector.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.15.0\build\Microsoft.ApplicationInsights.DependencyCollector.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.15.0\build\Microsoft.ApplicationInsights.PerfCounterCollector.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.15.0\build\Microsoft.ApplicationInsights.PerfCounterCollector.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.WindowsServer.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.15.0\build\Microsoft.ApplicationInsights.PerfCounterCollector.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.15.0\build\Microsoft.ApplicationInsights.PerfCounterCollector.targets')" />
+  <Import Project="..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets')" />
+  <Import Project="..\packages\Microsoft.ApplicationInsights.WindowsServer.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.targets')" />
+  <Import Project="..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

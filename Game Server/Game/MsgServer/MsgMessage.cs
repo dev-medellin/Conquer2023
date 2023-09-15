@@ -3418,6 +3418,16 @@ namespace COServer.Game.MsgServer
                             }
                             break;
                         }
+                    case "spwn_terato":
+                        {
+                            using (var rec = new ServerSockets.RecycledPacket())
+                            {
+                                var stream = rec.GetStream();
+                                Database.Server.AddMapMonster(stream, client.Map, 20060, client.Player.X, client.Player.Y, 1, 1, 1, client.Player.DynamicID, true, MsgFloorItem.MsgItemPacket.EffectMonsters.EarthquakeAndNight);
+                            }
+                              
+                            break;
+                        }
                     case "spi":
                         {
                             ushort atr = 0;

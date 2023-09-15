@@ -88,18 +88,19 @@ namespace COServer.Game.MsgTournaments
                 {
                     var winner = MapPlayers().First();
 
-                    MsgSchedules.SendSysMesage("" + winner.Player.Name + " has Won  Lastmanstanding , he received " + RewardConquerPoints.ToString() + " ConquerPoints and 1 YinYangFruit.", MsgServer.MsgMessage.ChatMode.TopLeftSystem, MsgServer.MsgMessage.MsgColor.white);
+                    MsgSchedules.SendSysMesage("" + winner.Player.Name + " has Won  Lastmanstanding , he received " + RewardConquerPoints.ToString() + " ConquerPoints and 2 PVE points.", MsgServer.MsgMessage.ChatMode.TopLeftSystem, MsgServer.MsgMessage.MsgColor.white);
                     winner.Player.ConquerPoints += RewardConquerPoints;
+                    winner.Player.PVEPoints += 2;
                     string reward = "[EVENT]" + winner.Player.Name + " has won and received " + RewardConquerPoints + " CPs from Last man Standing match.";
                     //                Program.//                DiscordAPI.Enqueue($"``{reward}``");
 
-                    Database.ServerDatabase.LoginQueue.Enqueue(reward);
-                    using (var rec = new ServerSockets.RecycledPacket())
-                    {
-                        var stream = rec.GetStream();
-                        if (winner.Inventory.HaveSpace(1))
-                            winner.Inventory.Add(stream, 711188);
-                    }
+                    //Database.ServerDatabase.LoginQueue.Enqueue(reward);
+                    //using (var rec = new ServerSockets.RecycledPacket())
+                    //{
+                    //    var stream = rec.GetStream();
+                    //    if (winner.Inventory.HaveSpace(1))
+                    //        winner.Inventory.Add(stream, 711188);
+                    //}
                     winner.SendSysMesage("You received " + RewardConquerPoints.ToString() + " ConquerPoints. ", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
 
                     winner.Teleport(428, 378, 1002, 0);
