@@ -273,17 +273,18 @@ namespace COServer.Game.MsgTournaments
             {
                 uint prize = 0;
                 if (i == 1)
-                    prize = 15000;
+                    prize = 150000;
                 else if (i == 2)
-                    prize = 12000;
+                    prize = 120000;
                 else if (i == 3)
-                    prize = 10000;
+                    prize = 100000;
                 i++;
                 user.Teleport(428, 378, 1002);
                 if (prize != 0)
                 {
                     user.Player.ConquerPoints += prize;
-                    user.CreateBoxDialog("Your team won and received " + prize + " ConquerPoints.");
+                    user.Player.PVEPoints += 1;
+                    user.CreateBoxDialog("Your team won and received " + prize + " ConquerPoints and 1PVE points");
                     string reward = "[EVENT]" + user.Player.Name + " has received " + prize + " from frozen pk for rank " + i + ".";
                     using (var rec = new RecycledPacket())
                     {

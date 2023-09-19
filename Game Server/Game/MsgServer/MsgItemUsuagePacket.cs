@@ -4449,6 +4449,12 @@ namespace COServer.Game.MsgServer
                                 SurpriseBox.GetReward(client, stream);
                                 break;
                             }
+                        case 720960:
+                            {
+                                client.Inventory.Update(item, Role.Instance.AddMode.REMOVE, stream);
+                                SurpriseBox.GetSoulPackReward(client, stream);
+                                break;
+                            }
 
                         case 729911:
                             {
@@ -4513,9 +4519,9 @@ namespace COServer.Game.MsgServer
                                 }
                                 client.Inventory.Update(item, Role.Instance.AddMode.REMOVE, stream);
                                 client.Inventory.AddItemWitchStack(722136, 0, 100, stream, true);
-                                client.Inventory.Add(stream, 117089, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//earring
-                                client.Inventory.Add(stream, 201009, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                client.Inventory.Add(stream, 202009, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
+                                client.Inventory.Add(stream, 117089, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//earring
+                                client.Inventory.Add(stream, 201009, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                client.Inventory.Add(stream, 202009, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
 
                                 client.Inventory.Add(stream, 1080001, 1);
                                 client.Inventory.Add(stream, 1088001, 1);
@@ -4525,57 +4531,57 @@ namespace COServer.Game.MsgServer
 
                                 if (Database.AtributesStatus.IsTrojan(client.Player.Class))
                                 {
-                                    client.Inventory.Add(stream, 130089, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 410209, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//blade
-                                    client.Inventory.Add(stream, 480209, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 150219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//ring
-                                    client.Inventory.Add(stream, 120189, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//neck
-                                    client.Inventory.Add(stream, 160219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//boots
+                                    client.Inventory.Add(stream, 130089, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 410209, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//blade
+                                    client.Inventory.Add(stream, 480209, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 150219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//ring
+                                    client.Inventory.Add(stream, 120189, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//neck
+                                    client.Inventory.Add(stream, 160219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//boots
                                 }
                                 else if (Database.AtributesStatus.IsWarrior(client.Player.Class))
                                 {
-                                    client.Inventory.Add(stream, 131089, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 561209, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//wand
-                                    client.Inventory.Add(stream, 150219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//ring
-                                    client.Inventory.Add(stream, 120189, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//neck
-                                    client.Inventory.Add(stream, 160219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//boots
+                                    client.Inventory.Add(stream, 131089, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 561209, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//wand
+                                    client.Inventory.Add(stream, 150219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//ring
+                                    client.Inventory.Add(stream, 120189, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//neck
+                                    client.Inventory.Add(stream, 160219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//boots
                                 }
                                 else if (Database.AtributesStatus.IsArcher(client.Player.Class))
                                 {
-                                    client.Inventory.Add(stream, 133089, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//armor
-                                    client.Inventory.Add(stream, 500209, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//bow
-                                    client.Inventory.Add(stream, 150219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//ring
-                                    client.Inventory.Add(stream, 120189, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//neck
-                                    client.Inventory.Add(stream, 160219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//boots
+                                    client.Inventory.Add(stream, 133089, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//armor
+                                    client.Inventory.Add(stream, 500209, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//bow
+                                    client.Inventory.Add(stream, 150219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//ring
+                                    client.Inventory.Add(stream, 120189, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//neck
+                                    client.Inventory.Add(stream, 160219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//boots
                                 }
                                 else if (Database.AtributesStatus.IsNinja(client.Player.Class))
                                 {
-                                    client.Inventory.Add(stream, 135089, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 601219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 601219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 150219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//ring
-                                    client.Inventory.Add(stream, 120189, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//neck
-                                    client.Inventory.Add(stream, 160219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//boots
+                                    client.Inventory.Add(stream, 135089, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 601219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 601219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 150219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//ring
+                                    client.Inventory.Add(stream, 120189, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//neck
+                                    client.Inventory.Add(stream, 160219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//boots
                                 }
                                 else if (Database.AtributesStatus.IsMonk(client.Player.Class))
                                 {
-                                    client.Inventory.Add(stream, 136089, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 610209, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 610209, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 150219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//ring
-                                    client.Inventory.Add(stream, 120189, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//neck
-                                    client.Inventory.Add(stream, 160219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//boots
+                                    client.Inventory.Add(stream, 136089, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 610209, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 610209, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 150219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//ring
+                                    client.Inventory.Add(stream, 120189, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//neck
+                                    client.Inventory.Add(stream, 160219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//boots
                                 }
                                 else if (Database.AtributesStatus.IsTaoist(client.Player.Class))
                                 {
-                                    client.Inventory.Add(stream, 134089, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 421219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
-                                    client.Inventory.Add(stream, 160219, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//boots
-                                    client.Inventory.Add(stream, 121189, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//bag
-                                    client.Inventory.Add(stream, 152209, 1, 6, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);//bag
+                                    client.Inventory.Add(stream, 134089, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 421219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);
+                                    client.Inventory.Add(stream, 160219, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//boots
+                                    client.Inventory.Add(stream, 121189, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//bag
+                                    client.Inventory.Add(stream, 152209, 1, 12, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, false);//bag
                                     //152066
                                 }
-                                client.CreateBoxDialog("Welcome to our server!");
+                                client.CreateBoxDialog("Welcome to Altice Conquer!");
                                 break;
                             }
                         case 723584:

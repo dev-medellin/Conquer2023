@@ -35,7 +35,7 @@ namespace COServer.Game.MsgTournaments
 
                 StartTimer = DateTime.Now;
                 Process = ProcesType.Idle;
-                MsgSchedules.SendInvitation("KingOfTheHill", "ConquerPoints, 2-PowerExpBalls", 445, 351, 1002, 0, 60);
+                MsgSchedules.SendInvitation("KingOfTheHill", "ConquerPoints, 1PVE point", 445, 351, 1002, 0, 60);
 
                 InfoTimer = DateTime.Now.AddSeconds(10);
                 Secounds = 60;
@@ -144,8 +144,9 @@ namespace COServer.Game.MsgTournaments
 
                             MsgSchedules.SendSysMesage("KingOfTheHill has ended. All Players of KingOfTheHill has teleported to TwinCity.", MsgServer.MsgMessage.ChatMode.Center, MsgServer.MsgMessage.MsgColor.red);
                             MsgSchedules.SendSysMesage("" + Winner.Player.Name + " has won the king of hill. ", MsgServer.MsgMessage.ChatMode.BroadcastMessage, MsgServer.MsgMessage.MsgColor.white);
-                            Winner.Player.ConquerPoints += 12000;
-                            string reward = "[EVENT]" + Winner.Player.Name + " has won and received 12,000 CPs from King Of The Hill.";
+                            Winner.Player.ConquerPoints += 120000;
+                            Winner.Player.PVEPoints += 1;
+                            string reward = "[EVENT]" + Winner.Player.Name + " has won and received 120,000 CPs and 1PVE point from King Of The Hill.";
                             //                Program.//                DiscordAPI.Enqueue($"``{reward}``");
 
                             Database.ServerDatabase.LoginQueue.Enqueue(reward);

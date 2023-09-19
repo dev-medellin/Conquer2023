@@ -176,7 +176,7 @@ namespace COServer.Game.MsgServer
 
                     MsgTournaments.MsgSchedules.PkWar.AddTop(client);
                     // Welcome Messages.
-                    client.SendSysMesage("Welcome to Love Conquer Classic visit Guide NPC for Help! ", MsgMessage.ChatMode.Talk);
+                    client.SendSysMesage("Welcome to Altice Conquer Classic visit Guide NPC for Help! ", MsgMessage.ChatMode.Talk);
                     client.SendSysMesage("Server 5517", MsgMessage.ChatMode.Talk);
                     client.SendSysMesage("Enjoy!", MsgMessage.ChatMode.Talk);
                     //client.Player.MessageBox("There is a new patch you have to download and put it in your client or you wont be able to login, click ok to go to link", (p) =>

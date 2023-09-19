@@ -282,6 +282,7 @@ namespace COServer.Database
             ExperiencePotion = 723017,
             NinjaAmulet = 723583,
             PowerExpBall = 722057,
+            SoulPackP6 = 720960,
             DoubleExp = 723017,
             SkillTeamPKPack = 720981,
             ToughDrill = 1200005,

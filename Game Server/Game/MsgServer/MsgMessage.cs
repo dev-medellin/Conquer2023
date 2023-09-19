@@ -513,6 +513,30 @@ namespace COServer.Game.MsgServer
                                     }
                                     client.Player.BossTeleCooldown = DateTime.Now;
                                     client.Teleport(407, 425, 2054);
+                                    //client.Teleport(328, 354, 2056);
+                                    client.SendSysMesage("You have arrived!");
+                                    break;
+                                }
+                            case "terato":
+                                {
+                                    if (!client.Player.OnMyOwnServer)
+                                        break;
+                                    if (client.PokerPlayer != null)
+                                        break;
+                                    if (Program.BlockTeleportMap.Contains(client.Player.Map))
+                                    {
+                                        client.SendSysMesage("You can`t use it in " + client.Map.Name + " ");
+                                        break;
+                                    }
+                                    if (!client.Player.Alive || client.Player.DeadState)
+                                        break;
+                                    if (DateTime.Now < client.Player.BossTeleCooldown.AddMinutes(1))
+                                    {
+                                        client.SendSysMesage("You need to wait 1 minute before teleporting again.");
+                                        break;
+                                    }
+                                    client.Player.BossTeleCooldown = DateTime.Now;
+                                    client.Teleport(328, 354, 2056);
                                     client.SendSysMesage("You have arrived!");
                                     break;
                                 }
@@ -585,6 +609,7 @@ namespace COServer.Game.MsgServer
 
                         }
                     }
+                    else client.SendSysMesage("You`re not VIP-6.");
                 }
                 return false;
             }
@@ -780,9 +805,9 @@ namespace COServer.Game.MsgServer
                             using (var rec = new ServerSockets.RecycledPacket())
                             {
                                 var stream = rec.GetStream();
-                                Program.SendGlobalPackets.Enqueue(new Game.MsgServer.MsgMessage(data[1], "ALLUSERS", MsgColor.red, ChatMode.Center).GetArray(stream));
-                                Program.SendGlobalPackets.Enqueue(new Game.MsgServer.MsgMessage(data[1], "ALLUSERS", MsgColor.red, ChatMode.BroadcastMessage).GetArray(stream));
-                                Program.SendGlobalPackets.Enqueue(new Game.MsgServer.MsgMessage(data[1], "ALLUSERS", MsgColor.red, ChatMode.System).GetArray(stream));
+                                Program.SendGlobalPackets.Enqueue(new Game.MsgServer.MsgMessage(Message.Remove(0, 2), "ALLUSERS", MsgColor.red, ChatMode.Center).GetArray(stream));
+                                Program.SendGlobalPackets.Enqueue(new Game.MsgServer.MsgMessage(Message.Remove(0, 2), "ALLUSERS", MsgColor.red, ChatMode.BroadcastMessage).GetArray(stream));
+                                Program.SendGlobalPackets.Enqueue(new Game.MsgServer.MsgMessage(Message.Remove(0, 2), "ALLUSERS", MsgColor.red, ChatMode.System).GetArray(stream));
                             }
                             break;
                         }
@@ -3422,10 +3447,22 @@ namespace COServer.Game.MsgServer
                         {
                             using (var rec = new ServerSockets.RecycledPacket())
                             {
+                                var bossingID = ushort.Parse(data[1]);
                                 var stream = rec.GetStream();
-                                Database.Server.AddMapMonster(stream, client.Map, 20060, client.Player.X, client.Player.Y, 1, 1, 1, client.Player.DynamicID, true, MsgFloorItem.MsgItemPacket.EffectMonsters.EarthquakeAndNight);
+                                Database.Server.AddMapMonster(stream, client.Map, bossingID, client.Player.X, client.Player.Y, 1, 1, 1, client.Player.DynamicID, true, MsgFloorItem.MsgItemPacket.EffectMonsters.EarthquakeAndNight);
                             }
                               
+                            break;
+                        }
+                    case "spwnboss":
+                        {
+                            using (var rec = new ServerSockets.RecycledPacket())
+                            {
+                                
+                                var stream = rec.GetStream();
+                                Database.Server.AddMapMonster(stream, client.Map, 213883, client.Player.X, client.Player.Y, 1, 1, 1, client.Player.DynamicID, true, MsgFloorItem.MsgItemPacket.EffectMonsters.EarthquakeAndNight);
+                            }
+
                             break;
                         }
                     case "spi":

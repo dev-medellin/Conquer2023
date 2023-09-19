@@ -8,7 +8,7 @@ namespace COServer.Game.MsgTournaments
     public class MsgClassPKWar
     {
         public const ushort MapID = 1764;
-        public const uint RewardConquerPoints = 20000;
+        public const uint RewardConquerPoints = 1000000;
         public const string FilleName = "\\ClassPkWar.ini";
 
         public enum TournamentType : byte
@@ -297,6 +297,7 @@ namespace COServer.Game.MsgTournaments
                         client.Player.AddFlag(aura, Role.StatusFlagsBigVector32.PermanentFlag, false);
 
                     client.Player.ConquerPoints += RewardConquerPoints;
+                    client.Player.PVEPoints += 2;
                     if (client.Inventory.HaveSpace(4))
                     {
                         client.Inventory.Add(stream, Database.ItemType.PowerExpBall, 4);
@@ -305,8 +306,8 @@ namespace COServer.Game.MsgTournaments
                     {
                         client.Inventory.AddReturnedItem(stream, Database.ItemType.PowerExpBall, 4);
                     }
-                    client.SendSysMesage("You received " + RewardConquerPoints.ToString() + " ConquerPoints. ", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
-                    string reward = "[EVENT]" + client.Player.Name + " has received "+RewardConquerPoints+" from class pk.";
+                    client.SendSysMesage("You received " + RewardConquerPoints.ToString() + " ConquerPoints and 2PVE points. ", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
+                    string reward = "[EVENT]" + client.Player.Name + " has received "+RewardConquerPoints+" and 2PVE points from class pk.";
                     Database.ServerDatabase.LoginQueue.Enqueue(reward);
                     LastFlag = aura;
                     Winner = client.Player.UID;

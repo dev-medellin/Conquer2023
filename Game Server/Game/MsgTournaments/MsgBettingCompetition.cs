@@ -102,13 +102,14 @@ namespace COServer.Game.MsgTournaments
                 {
                     var winner = MapPlayers().First();
 
-                    MsgSchedules.SendSysMesage("" + winner.Player.Name + " has Won  BettingCompetition , he received " + RewardConquerPoints.ToString() + " ConquerPoints.", MsgServer.MsgMessage.ChatMode.TopLeftSystem, MsgServer.MsgMessage.MsgColor.white);
+                    MsgSchedules.SendSysMesage("" + winner.Player.Name + " has Won  BettingCompetition , he received " + RewardConquerPoints.ToString() + " ConquerPoints and 3PVE points.", MsgServer.MsgMessage.ChatMode.TopLeftSystem, MsgServer.MsgMessage.MsgColor.white);
                     winner.Player.ConquerPoints += RewardConquerPoints;
-                    string reward = "[EVENT]" + winner.Player.Name + " has won and received " + RewardConquerPoints + " from BettingCompetition.";
+                    winner.Player.PVEPoints += 3;
+                    string reward = "[EVENT]" + winner.Player.Name + " has won and received " + RewardConquerPoints + " and 3PVE points. from BettingCompetition.";
                     //                Program.//                DiscordAPI.Enqueue($"``{reward}``");
 
                     Database.ServerDatabase.LoginQueue.Enqueue(reward);
-                    winner.SendSysMesage("You received " + RewardConquerPoints.ToString() + " ConquerPoints. ", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
+                    winner.SendSysMesage("You received " + RewardConquerPoints.ToString() + " ConquerPoints and 3PVE points. ", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
                     winner.Teleport(428, 378, 1002, 0);
 
                     Process = ProcesType.Dead;

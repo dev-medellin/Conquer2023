@@ -110,9 +110,10 @@ namespace COServer.Game.MsgMonster
 
         public List<uint> GenerateSoulsItems(ushort level)
         {
-            var arr1 = new[] {2, 3, 4, 5};
+            var arr1 = new[] { 2, 3, 4, 5};
+            var rndMember = arr1[Role.Core.Random.Next(arr1.Length)];
             if (level == 0)
-                level = (ushort)Role.Core.Random.Next(arr1.Length);
+                level = (ushort)rndMember;
             List<uint> items = new List<uint>();
             byte count = 1;
             if (Database.ItemType.PurificationItems.ContainsKey(level))

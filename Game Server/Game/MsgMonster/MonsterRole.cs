@@ -197,10 +197,10 @@ namespace COServer.Game.MsgMonster
 
                 if (killer != null && killer.Player != null && !CounterKill)
                 {
-                    uint val = (uint)(Role.Core.Random.Next(100, 400));
+                    uint val = (uint)(Role.Core.Random.Next(100, 200));
 
                     if (killer.Player.VipLevel == 6)
-                        val = (uint)(Role.Core.Random.Next(500, 1000));
+                        val = (uint)(Role.Core.Random.Next(400, 500));
 
                     killer.MobsKilled++;
                     killer.TotalMobsKilled++;
@@ -4937,6 +4937,7 @@ namespace COServer.Game.MsgMonster
                     }
                     if (Boss > 0 && Family.ID == 20101 && Map == 3851)//PurpleBanshee
                     {
+
                         uint ItemID = 3004465;
                         if (Role.Core.Rate(20))
                         {
@@ -5031,6 +5032,34 @@ namespace COServer.Game.MsgMonster
                             for (int x = 0; x < 7; x++)
                             {
                                 uint id = Database.ItemType.DragonBall;
+                                if (x == 5)
+                                    id = 730004;
+                                if (x == 6)
+                                    id = 723694;
+                                MsgServer.MsgGameItem DataItem = new MsgServer.MsgGameItem();
+                                DataItem.ITEM_ID = id;
+                                Database.ItemType.DBItem DBItem;
+                                if (Database.Server.ItemsBase.TryGetValue(id, out DBItem))
+                                {
+                                    DataItem.Durability = DataItem.MaximDurability = DBItem.Durability;
+                                }
+                                DataItem.Color = Role.Flags.Color.Red;
+                                ushort xx = (ushort)Program.GetRandom.Next(X - 7, X + 7);
+                                ushort yy = (ushort)Program.GetRandom.Next(Y - 7, Y + 7);
+                                if (killer.Map.AddGroundItem(ref xx, ref yy, 3))
+                                {
+                                    MsgFloorItem.MsgItem DropItem = new MsgFloorItem.MsgItem(DataItem, xx, yy, MsgFloorItem.MsgItem.ItemType.Item, 0, DynamicID, Map, killer.Player.UID, true, GMap);
+
+                                    if (killer.Map.EnqueueItem(DropItem))
+                                    {
+
+                                        DropItem.SendAll(stream, MsgFloorItem.MsgDropID.Visible);
+                                    }
+                                }
+                            }
+                            for (int x = 0; x < 4; x++)
+                            {
+                                uint id = Database.ItemType.SoulPackP6;
                                 if (x == 5)
                                     id = 730004;
                                 if (x == 6)
@@ -5247,29 +5276,29 @@ namespace COServer.Game.MsgMonster
                                 }
                             }
                         }
-                        //for (int x = 0; x < 5; x++)
-                        //{
+                        for (int x = 0; x < 5; x++)
+                        {
 
-                        //    MsgServer.MsgGameItem DataItem = new MsgServer.MsgGameItem();
-                        //    DataItem.ITEM_ID = Database.ItemType.PowerExpBall;
-                        //    Database.ItemType.DBItem DBItem;
-                        //    if (Database.Server.ItemsBase.TryGetValue(Database.ItemType.DragonBall, out DBItem))
-                        //    {
-                        //        DataItem.Durability = DataItem.MaximDurability = DBItem.Durability;
-                        //    }
-                        //    DataItem.Color = Role.Flags.Color.Red;
-                        //    ushort xx = (ushort)Program.GetRandom.Next(X - 10, X + 10);
-                        //    ushort yy = (ushort)Program.GetRandom.Next(Y - 10, Y + 10);
-                        //    if (killer.Map.AddGroundItem(ref xx, ref yy, 7))
-                        //    {
-                        //        MsgFloorItem.MsgItem DropItem = new MsgFloorItem.MsgItem(DataItem, xx, yy, MsgFloorItem.MsgItem.ItemType.Item, 0, DynamicID, Map, killer.Player.UID, true, GMap);
+                            MsgServer.MsgGameItem DataItem = new MsgServer.MsgGameItem();
+                            DataItem.ITEM_ID = Database.ItemType.SoulPackP6;
+                            Database.ItemType.DBItem DBItem;
+                            if (Database.Server.ItemsBase.TryGetValue(Database.ItemType.DragonBall, out DBItem))
+                            {
+                                DataItem.Durability = DataItem.MaximDurability = DBItem.Durability;
+                            }
+                            DataItem.Color = Role.Flags.Color.Red;
+                            ushort xx = (ushort)Program.GetRandom.Next(X - 10, X + 10);
+                            ushort yy = (ushort)Program.GetRandom.Next(Y - 10, Y + 10);
+                            if (killer.Map.AddGroundItem(ref xx, ref yy, 7))
+                            {
+                                MsgFloorItem.MsgItem DropItem = new MsgFloorItem.MsgItem(DataItem, xx, yy, MsgFloorItem.MsgItem.ItemType.Item, 0, DynamicID, Map, killer.Player.UID, true, GMap);
 
-                        //        if (killer.Map.EnqueueItem(DropItem))
-                        //        {
-                        //            DropItem.SendAll(stream, MsgFloorItem.MsgDropID.Visible);
-                        //        }
-                        //    }
-                        //}
+                                if (killer.Map.EnqueueItem(DropItem))
+                                {
+                                    DropItem.SendAll(stream, MsgFloorItem.MsgDropID.Visible);
+                                }
+                            }
+                        }
                         if (killer.Team != null)
                         {
                             foreach (var member in killer.Team.Temates)
@@ -5356,7 +5385,7 @@ namespace COServer.Game.MsgMonster
                                 }
                             }
                         }
-                        //killer.Player.ConquerPoints += 100000;
+                        killer.Player.ConquerPoints += 500000;
                         //killer.Player.BossPoints += 1;
                         if (killer.Player.SubClass != null)
                             killer.Player.SubClass.AddStudyPoints(killer, GetStudyPoints, stream);

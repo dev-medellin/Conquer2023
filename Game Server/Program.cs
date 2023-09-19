@@ -23,6 +23,7 @@ namespace COServer
     class Program
     {
         public static bool TestServer = false;
+        public static List<string> IPsListCon = new List<string>();
         //public static Discord DiscordAPI = new Discord("https://discordapp.com/api/webhooks/594950689407631403/pJ7pZBzSXtsd4oLQ8bUkdL8NFGcpiAFApehFd7n5hUBi8mNq6k-ny8AEI4bPKdLrn_2A");
         public static ulong CPsHuntedSinceRestart = 0;
         public static List<byte[]> LoadPackets = new List<byte[]>();

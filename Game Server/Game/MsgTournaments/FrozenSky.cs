@@ -9,7 +9,7 @@ namespace COServer.Game.MsgTournaments
     public class FrozenSky : ITournament
     {
 
-        public const uint RewardConquerPoints = 15000;
+        public const uint RewardConquerPoints = 150000;
         public ProcesType Process { get; set; }
         public DateTime StartTimer = new DateTime();
         public DateTime InfoTimer = new DateTime();
@@ -88,10 +88,10 @@ namespace COServer.Game.MsgTournaments
                     if (players.Count() > 0)
                     {
                         var winner = players[0];
-                        MsgSchedules.SendSysMesage("" + winner.Player.Name + " has won FrozenSky and received " + RewardConquerPoints.ToString() + " ConquerPoints and a PowerExpBall.", MsgServer.MsgMessage.ChatMode.TopLeftSystem, MsgServer.MsgMessage.MsgColor.white);
+                        MsgSchedules.SendSysMesage("" + winner.Player.Name + " has won FrozenSky and received " + RewardConquerPoints.ToString() + " ConquerPoints and a 1PVE point.", MsgServer.MsgMessage.ChatMode.TopLeftSystem, MsgServer.MsgMessage.MsgColor.white);
                         winner.Player.ConquerPoints += RewardConquerPoints;
-                        winner.Player.PVEPoints += 3;
-                        string reward = "[EVENT]" + winner.Player.Name + " has won and received " + RewardConquerPoints + " CPs and a PowerExpBall from FrozenSky.";
+                        winner.Player.PVEPoints += 1;
+                        string reward = "[EVENT]" + winner.Player.Name + " has won and received " + RewardConquerPoints + " CPs and a 1PVE point from FrozenSky.";
                         //                Program.//                DiscordAPI.Enqueue($"``{reward}``");
 
                         Database.ServerDatabase.LoginQueue.Enqueue(reward);
@@ -101,7 +101,7 @@ namespace COServer.Game.MsgTournaments
                             if (winner.Inventory.HaveSpace(1))
                                 winner.Inventory.Add(stream, 722057);
                         }
-                        winner.SendSysMesage("You received " + RewardConquerPoints.ToString() + " ConquerPoints, and a PowerExpBall. ", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
+                        winner.SendSysMesage("You received " + RewardConquerPoints.ToString() + " ConquerPoints, and a 1PVE point. ", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
 
                         winner.Teleport(428, 378, 1002, 0);
                         winner.Player.RemoveFlag(MsgServer.MsgUpdate.Flags.Freeze);

@@ -25,7 +25,7 @@ namespace COServer.Game.MsgTournaments
         public bool SendInvitation = false;
         public class GuildWarScrore
         {
-            public const int ConquerPointsReward = 30000;
+            public const int ConquerPointsReward = 1000000;
 
             public uint GuildID;
             public string Name;

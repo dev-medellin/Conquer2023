@@ -110,6 +110,7 @@ namespace COServer.Game.MsgNpc
                 case 0:
                     {
                         dialog.Text($"Hello there! I`m the new Souls Master over here. I can trade your P4 and P5 souls for a random a P6 one!");
+                        dialog.Option("Trade 6 P2/3s for 1 Random P4/P5.", 2);
                         dialog.Option("Trade 15 P4/5s for 1 Random P6.", 1);
                         dialog.Option("Leave", 255);
                         dialog.AddAvatar(10).FinalizeDialog();
@@ -130,6 +131,41 @@ namespace COServer.Game.MsgNpc
                             foreach (var item2 in list)
                                 client.Inventory.Remove(item2, 1, stream);
                             var array = Database.ItemType.PurificationItems[6].Values.ToArray();
+                            int position = Program.GetRandom.Next(0, array.Length);
+                            var item = array[position].ID;
+                            var name = Database.Server.ItemsBase.GetItemName(item);
+                            client.Inventory.Add(stream, item);
+                            client.SendSysMesage($"You got a {name}! Check your inventory!");
+                            Program.SendGlobalPackets.Enqueue(new MsgMessage($"{client.Player.Name} has got a {name} from the Souls Trader.", MsgMessage.MsgColor.red, MsgMessage.ChatMode.System).GetArray(stream));
+
+
+                        }
+                        else
+                        {
+                            dialog.Text($"You dont have enough souls.!");
+                            dialog.Option("Sorry.", 255);
+                            dialog.AddAvatar(10).FinalizeDialog();
+                        }
+                        break;
+                    }
+                case 2:
+                    {
+                        var list = new List<uint>();
+                        foreach (var item in client.Inventory.ClientItems.Values)
+                            if (Database.ItemType.PurificationItems[2].ContainsKey(item.ITEM_ID) || Database.ItemType.PurificationItems[3].ContainsKey(item.ITEM_ID))
+                            {
+                                list.Add(item.ITEM_ID);
+                                if (list.Count == 6)
+                                    break;
+                            }
+                        if (list.Count == 6)
+                        {
+                            var arr1 = new[] { 4, 5 };
+                            var rndMember = arr1[Role.Core.Random.Next(arr1.Length)];
+                            var level = (ushort)rndMember;
+                            foreach (var item2 in list)
+                                client.Inventory.Remove(item2, 1, stream);
+                            var array = Database.ItemType.PurificationItems[level].Values.ToArray();
                             int position = Program.GetRandom.Next(0, array.Length);
                             var item = array[position].ID;
                             var name = Database.Server.ItemsBase.GetItemName(item);
@@ -419,7 +455,7 @@ namespace COServer.Game.MsgNpc
                         dialog.Option("Oblivion Dew (24 OPs)", 2);
                         dialog.Option("Silver Prize (6k OPs)", 3);
                         //dialog.Option("Silver Prize (10k OPs)", 4);
-                        dialog.Option("SurpriseBox (24 OPs)", 24);
+                        dialog.Option("SurpriseBox (50 OPs)", 24);
                         dialog.Option("Praying Stone(S) (48 OPs)", 5);
                         dialog.Option("Lotto Ticket (5 OPs)", 6);
                         dialog.Option("Sash(S) (12 OPs)", 7);
@@ -457,11 +493,11 @@ namespace COServer.Game.MsgNpc
                     }
                 case 24:
                     {
-                        if (client.Player.OnlinePoints >= 24)
+                        if (client.Player.OnlinePoints >= 50)
                         {
                             if (client.Inventory.HaveSpace(1))
                             {
-                                client.Player.OnlinePoints -= 24;
+                                client.Player.OnlinePoints -= 50;
                                 client.Inventory.Add(stream, 722178);
                             }
                             else client.SendSysMesage("You don`t have enough space in your inventory.");

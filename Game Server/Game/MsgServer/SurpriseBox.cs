@@ -20,7 +20,9 @@ namespace COServer.Game.MsgServer
         };
         static uint GenerateSoulsItems()
         {
-            var level = (ushort)Role.Core.Random.Next(3, 6);
+            var arr1 = new[] { 2, 3, 4, 5 };
+            var rndMember = arr1[Role.Core.Random.Next(arr1.Length)];
+            var level = (ushort)rndMember;
             if (Database.ItemType.PurificationItems.ContainsKey(level))
             {
                 var array = Database.ItemType.PurificationItems[level].Values.ToArray();
@@ -28,28 +30,67 @@ namespace COServer.Game.MsgServer
                 return array[position].ID;
             }
 
+
+            return 0;
+        }
+
+        static uint GenerateSoulsItemsPhase6()
+        {
+            var arr1 = new[] { 2, 3, 4, 5 };
+            var rndMember = arr1[Role.Core.Random.Next(arr1.Length)];
+            var level = (ushort)rndMember;
+            if (Database.ItemType.PurificationItems.ContainsKey(level))
+            {
+                var array = Database.ItemType.PurificationItems[level].Values.ToArray();
+                int position = Program.GetRandom.Next(0, array.Length);
+                return array[position].ID;
+            }
+
+
             return 0;
         }
         public static void GetReward(GameClient client, ServerSockets.Packet stream)
         {
-            if (Role.MyMath.Success(0.5))
+            if (Role.MyMath.Success(100))//0.5
             {
                 var reward = GenerateSoulsItems();
                 client.Inventory.Add(stream, reward);
                 client.SendSysMesage("You got a nice reward check your inventory");
             }
-            else if (Role.MyMath.Success(10))
+            else
             {
-                var reward = Mid[Role.Core.Random.Next(0, Mid.Count)];
-                client.Inventory.Add(stream, reward, 1);
+                var reward = GenerateSoulsItems();
+                client.Inventory.Add(stream, reward);
+                client.SendSysMesage("You got a nice reward check your inventory");
+            }
+            // else if (Role.MyMath.Success(10))
+            // {
+            //     var reward = Mid[Role.Core.Random.Next(0, Mid.Count)];
+            //     client.Inventory.Add(stream, reward, 1);
+            //     client.SendSysMesage("You got a nice reward check your inventory");
+            // }
+        }
+
+        public static void GetSoulPackReward(GameClient client, ServerSockets.Packet stream)
+        {
+            if (Role.MyMath.Success(10))//0.5
+            {
+                var reward = GenerateSoulsItemsPhase6();
+                client.Inventory.Add(stream, reward);
                 client.SendSysMesage("You got a nice reward check your inventory");
             }
             else
             {
-                var reward = High[Role.Core.Random.Next(0, High.Count)];
-                client.Inventory.Add(stream, reward, 1);
+                var reward = GenerateSoulsItems();
+                client.Inventory.Add(stream, reward);
                 client.SendSysMesage("You got a nice reward check your inventory");
             }
+            // else if (Role.MyMath.Success(10))
+            // {
+            //     var reward = Mid[Role.Core.Random.Next(0, Mid.Count)];
+            //     client.Inventory.Add(stream, reward, 1);
+            //     client.SendSysMesage("You got a nice reward check your inventory");
+            // }
         }
     }
 }

@@ -21,7 +21,7 @@ namespace COServer.Game.MsgTournaments
         {
             public class ClanWarScrore
             {
-                public const int ConquerPointsReward = 7000;
+                public const int ConquerPointsReward = 3000000;
 
                 public uint ClainID;
                 public string Name;
@@ -291,7 +291,8 @@ namespace COServer.Game.MsgTournaments
                                 if (user.Player.MyClanMember.Rank == Role.Instance.Clan.Ranks.Leader)
                                 {
                                     user.Player.ConquerPoints += ClanWarScrore.ConquerPointsReward;
-                                    user.CreateBoxDialog("You received " + ClanWarScrore.ConquerPointsReward + " ConquerPoints.");
+                                    user.Player.PVEPoints += 3;
+                                    user.CreateBoxDialog("You received " + ClanWarScrore.ConquerPointsReward + " ConquerPoints and 3PVE points.");
                                     using (var rec = new ServerSockets.RecycledPacket())
                                     {
                                         var stream = rec.GetStream();
@@ -300,8 +301,9 @@ namespace COServer.Game.MsgTournaments
                                 }
                                 else
                                 {
+                                    user.Player.PVEPoints += 1;
                                     user.Player.ConquerPoints += ClanWarScrore.ConquerPointsReward / 2;
-                                    user.CreateBoxDialog("You received " + ClanWarScrore.ConquerPointsReward / 2 + " ConquerPoints.");
+                                    user.CreateBoxDialog("You received " + ClanWarScrore.ConquerPointsReward / 2 + " ConquerPoints and 1PVE point.");
                                 }
                             }
                         }

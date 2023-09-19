@@ -67,8 +67,9 @@ namespace COServer.Game.MsgTournaments
                    var stream = rec.GetStream();
                    var stream2 = rec2.GetStream();
 
-                   int Reward = (int)(100 * (byte)this.Flag);
-                   client.Player.ConquerPoints += 100;
+                   int Reward = (int)(1000 * (byte)this.Flag);
+                   client.Player.ConquerPoints += 10000;
+                   client.Player.PVEPoints += 1;
 
                    Game.MsgServer.MsgStringPacket packet = new Game.MsgServer.MsgStringPacket();
                    packet.ID = MsgServer.MsgStringPacket.StringID.Sound;
@@ -77,7 +78,7 @@ namespace COServer.Game.MsgTournaments
                    packet.Strings[1] = "1";
                    stream = stream.StringPacketCreate(packet);
 
-                   var msg = new MsgMessage("[" + this.Flag.ToString() + "]" + client.Player.Name + " received " + Reward.ToString() + " ConquerPoints.", MsgMessage.MsgColor.red, MsgMessage.ChatMode.System);
+                   var msg = new MsgMessage("[" + this.Flag.ToString() + "]" + client.Player.Name + " received " + Reward.ToString() + " ConquerPoints and 1PVE point.", MsgMessage.MsgColor.red, MsgMessage.ChatMode.System);
                    stream2 = msg.GetArray(stream2);
                    foreach (var user in Database.Server.GamePoll.Values)
                    {

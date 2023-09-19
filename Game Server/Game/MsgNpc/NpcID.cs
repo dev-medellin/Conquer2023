@@ -586,6 +586,7 @@ namespace COServer.Game.MsgNpc
         GM = 29680,
         GiantOut = 20823,
         UnlimitedArena = 710010,
+        UnboundItem = 199602,
         SelectP7WeaponSoulPack = uint.MaxValue - 1,
         SelectP7EquipmentSoulPack = uint.MaxValue - 2,
         SelectSacredRefineryPack = uint.MaxValue - 3,

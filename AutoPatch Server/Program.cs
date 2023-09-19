@@ -11,7 +11,7 @@ namespace AutoPatch_Server
 {
     class Program
     {
-        public const string updatepath = "25.32.164.214"; //95.141.33.28
+        public const string updatepath = "96.9.211.105"; //95.141.33.28
         public static Dictionary<string, string> PatchesPath = new Dictionary<string, string>();
         public static List<SocketWrapper> MyConnectedClients = new List<SocketWrapper>();
         static void Main(string[] args)

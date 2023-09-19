@@ -9,7 +9,7 @@ namespace COServer.Game.MsgTournaments
     public class MsgCouples
     {
 
-        public const uint RewardConquerPoints = 20000;
+        public const uint RewardConquerPoints = 1000000;
         public ProcesType Process { get; set; }
         public DateTime StartTimer = new DateTime();
         public DateTime InfoTimer = new DateTime();
@@ -119,14 +119,15 @@ namespace COServer.Game.MsgTournaments
 
                         var winner = MapPlayers().First();
 
-                        MsgSchedules.SendSysMesage("" + winner.Player.Name + " has won CouplesTournament, they received " + RewardConquerPoints.ToString() + " ConquerPoints.", MsgServer.MsgMessage.ChatMode.TopLeftSystem, MsgServer.MsgMessage.MsgColor.white);
+                        MsgSchedules.SendSysMesage("" + winner.Player.Name + " has won CouplesTournament, they received " + RewardConquerPoints.ToString() + " ConquerPoints and 2PVE points.", MsgServer.MsgMessage.ChatMode.TopLeftSystem, MsgServer.MsgMessage.MsgColor.white);
 
                         winner.Player.ConquerPoints += RewardConquerPoints;
-                        string reward = "[EVENT]" + winner.Player.Name + " has received " + RewardConquerPoints + " from CouplesTournament .";
+                        winner.Player.PVEPoints += 2;
+                        string reward = "[EVENT]" + winner.Player.Name + " has received " + RewardConquerPoints + " and 2PVE points from CouplesTournament .";
                         Database.ServerDatabase.LoginQueue.Enqueue(reward);
 
 
-                        winner.SendSysMesage("You received " + RewardConquerPoints.ToString() + " ConquerPoints. ", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
+                        winner.SendSysMesage("You received " + RewardConquerPoints.ToString() + " ConquerPoints and 2PVE points. ", MsgServer.MsgMessage.ChatMode.System, MsgServer.MsgMessage.MsgColor.red);
                         foreach (var player in MapPlayers())
                             player.Teleport(428, 378, 1002, 0);
                         Winner1 = winner.Player.Name;

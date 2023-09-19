@@ -54,3 +54,10 @@ C:\Users\user\Desktop\MyClassic\AutoPatch Server\obj\Debug\AutoPatch Server.cspr
 C:\Users\user\Desktop\MyClassic\AutoPatch Server\obj\Debug\AutoPatch Server.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\MyClassic\AutoPatch Server\obj\Debug\AutoPatch Server.exe
 C:\Users\user\Desktop\MyClassic\AutoPatch Server\obj\Debug\AutoPatch Server.pdb
+C:\Users\Administrator\Desktop\MyClassic\AutoPatch Server\bin\Debug\AutoPatch Server.exe.config
+C:\Users\Administrator\Desktop\MyClassic\AutoPatch Server\bin\Debug\AutoPatch Server.exe
+C:\Users\Administrator\Desktop\MyClassic\AutoPatch Server\bin\Debug\AutoPatch Server.pdb
+C:\Users\Administrator\Desktop\MyClassic\AutoPatch Server\obj\Debug\AutoPatch Server.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\MyClassic\AutoPatch Server\obj\Debug\AutoPatch Server.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\MyClassic\AutoPatch Server\obj\Debug\AutoPatch Server.exe
+C:\Users\Administrator\Desktop\MyClassic\AutoPatch Server\obj\Debug\AutoPatch Server.pdb

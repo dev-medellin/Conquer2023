@@ -820,6 +820,55 @@ namespace COServer.Client
                 }
             }
         }
+        public unsafe void DisconectStopFunctions()
+        {
+            try
+            {
+                using (var rec = new ServerSockets.RecycledPacket())
+                {
+                    var stream = rec.GetStream();
+                    //Remove entity in map
+                    //if (!this.AutoHunting.Enable)
+                    {
+                        //if(this != null)
+                        //if (this.Map != null)
+                        //    this.Map.RemoveEntity(this);
+                    }
+                    //Send Action Remove Objet in map
+                    var actionVending = new ActionQuery()
+                    {
+                        ObjId = this.Player.UID,
+                        Type = ActionType.StopVending,
+                        dwParam = this.Player.Map,
+                        wParam1 = this.Player.X,
+                        dwParam2 = this.Player.Y,
+                        dwParam3 = this.Player.Map
+                    };
+                    this.Send(stream.ActionCreate(&actionVending));
+                    //Remove alfonbra in map
+                    if (this.MyVendor != null)
+                        this.MyVendor.StopVending(stream);
+                    if (this.MyTrade != null)
+                        this.MyTrade.CloseTrade();
+                    if (this.Player.Associate != null)
+                        this.Player.Associate.Online = false;
+                    //Remove potenci mentor
+                    if (this.Player.MyMentor != null)
+                        this.Player.MyMentor.Online = false;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                //important action
+                Database.ServerDatabase.SaveClient(this);
+            }
+        }
+
         public void Shift(ushort X, ushort Y, ServerSockets.Packet stream, bool SendData = true)
         {
             Player.Px = Player.X;

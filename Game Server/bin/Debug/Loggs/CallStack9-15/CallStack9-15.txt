@@ -246,3 +246,6 @@
 [CallStack][Dev]Arthur[PM] get 872 he have 1069856
 [CallStack][Dev]Arthur[PM] get 774 he have 1070728
 [CallStack][Dev]Arthur[PM] lost 699 he have 1071502
+[CallStack][Dev]Arthur[PM] lost 1000000 he have 1070803
+[CallStack][Dev]Arthur[PM] get 817 he have 70803
+[CallStack][Dev]Arthur[PM] get 764 he have 71620

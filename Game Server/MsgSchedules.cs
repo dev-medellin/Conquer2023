@@ -455,7 +455,8 @@ namespace COServer.Game.MsgTournaments
                                 var stream = rec.GetStream();
                                 string msg = "TeratoDragon has spawned in FrozenGrotto6 (328,354) ! Hurry and kill it.";
                                 Program.SendGlobalPackets.Enqueue(new MsgServer.MsgMessage(msg, "ALLUSERS", "Server", MsgServer.MsgMessage.MsgColor.red, MsgServer.MsgMessage.ChatMode.Center).GetArray(stream));
-                                Database.Server.AddMapMonster(stream, Map, 20060, 328, 354, 1, 1, 1);
+                                Database.Server.AddMapMonster(stream, Map, 20060, 328, 354, 1, 1, 1, 0, true, MsgFloorItem.MsgItemPacket.EffectMonsters.EarthquakeAndNight);
+
                                 //                Program.//                DiscordAPI.Enqueue($"``{msg}``");
                             }
                         }

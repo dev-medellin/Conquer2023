@@ -141,6 +141,7 @@ namespace COServer.Game.MsgServer
                         }
                         client.Inventory.Add(stream, 723753, 1, 0, 0, 0, Role.Flags.Gem.NoSocket, Role.Flags.Gem.NoSocket, true);
                         client.Equipment.Add(stream, 132009, Role.Flags.ConquerItem.Armor);
+
                         if (Database.AtributesStatus.IsTrojan(client.Player.Class))
                         {
                             if (!client.MySpells.ClientSpells.ContainsKey((ushort)Role.Flags.SpellID.FastBlader))
@@ -210,6 +211,16 @@ namespace COServer.Game.MsgServer
                         client.Player.Money += 500000;
                         client.Player.SendUpdate(stream, client.Player.Money, MsgServer.MsgUpdate.DataType.Money);
                         client.Send(new MsgServer.MsgMessage("ANSWER_OK", MsgMessage.MsgColor.red, MsgMessage.ChatMode.PopUP).GetArray(stream));
+
+                        if (DateTime.Now > client.Player.ExpireVip || client.Player.VipLevel != 6)
+                            client.Player.ExpireVip = DateTime.Now.AddDays(7);
+                        else
+                            client.Player.ExpireVip = client.Player.ExpireVip.AddDays(7);
+                        client.Player.VipLevel = 6;
+                        client.Player.Level = 140;
+                        client.Player.SendUpdate(stream, client.Player.VipLevel, MsgUpdate.DataType.VIPLevel);
+                        client.Player.UpdateVip(stream);
+                        client.CreateBoxDialog("Welcome to Altice Conquer. You`ve received VIP6 (7 day) and Level 140.");
 
                         client.Status.MaxHitpoints = client.CalculateHitPoint();
                         client.Player.HitPoints = (int)client.Status.MaxHitpoints;

@@ -8,7 +8,7 @@ namespace COServer.Game.MsgTournaments
     public class MsgLastManStand : ITournament
     {
 
-        public const uint RewardConquerPoints = 12000;
+        public const uint RewardConquerPoints = 150000;
         public ProcesType Process { get; set; }
         public DateTime StartTimer = new DateTime();
         public DateTime InfoTimer = new DateTime();

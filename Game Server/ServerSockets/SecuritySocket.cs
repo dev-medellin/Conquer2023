@@ -618,9 +618,15 @@ namespace COServer.ServerSockets
                     }
                     try
                     {
-
-                        WindowsAPI.ws2_32.shutdown(Connection.Handle, WindowsAPI.ws2_32.ShutDownFlags.SD_BOTH);
-                        WindowsAPI.ws2_32.closesocket(Connection.Handle);
+                        if (Program.IPsListCon.Contains(RemoteIp))
+                            Program.IPsListCon.Remove(RemoteIp);
+                        //Close trade
+                        if (Game.MyTrade != null)
+                            Game.MyTrade.CloseTrade();
+                        Database.ServerDatabase.SaveClient(Game);
+                        Game.DisconectStopFunctions();
+                        Connection.Shutdown(SocketShutdown.Both);
+                        Connection.Close();
                         Connection.Dispose();
                         GC.SuppressFinalize(Connection);
                     }
